@@ -1,21 +1,41 @@
 {
-  "name": "chatgpt-mobile",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
   "dependencies": {
+    "@types/react": "~18.0.27",
     "expo": "~48.0.6",
+    "expo-constants": "~14.2.1",
+    "expo-linking": "~4.0.1",
+    "expo-router": "^1.2.2",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.3"
+    "react-native": "0.71.3",
+    "react-native-safe-area-context": "4.5.0",
+    "react-native-screens": "~3.20.0",
+    "react-native-web": "~0.18.10",
+    "typescript": "^4.9.4",
+    "expo-background-fetch": "~11.1.1",
+    "expo-task-manager": "~11.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.36.0",
+    "eslint-config-universe": "^11.2.0",
+    "prettier": "^2.8.4"
   },
-  "private": true
+  "main": "index.js",
+  "name": "atomic-habit",
+  "overrides": {
+    "metro": "0.73.7",
+    "metro-resolver": "0.73.7"
+  },
+  "private": true,
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "start": "expo start",
+    "web": "expo start --web"
+  },
+  "version": "1.0.0"
 }
