@@ -1,6 +1,6 @@
 import { BackgroundFetchStatus, getStatusAsync } from "expo-background-fetch";
 import { isTaskRegisteredAsync } from "expo-task-manager";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Text, Button, View } from "react-native";
 
 import { Page } from "@/components/SafeArea";
@@ -9,18 +9,17 @@ import { unregisterBackgroundFetchAsync, registerBackgroundFetchAsync } from "@/
 
 export default function App() {
 	const [isRegistered, setIsRegistered] = useState(false);
-	const [status, setStatus] = useState(null);
+	const [status, setStatus] = useState<BackgroundFetchStatus | null>(null);
+	const checkStatusAsync = async () => {
+		const statusTemp = await getStatusAsync();
+		const isRegisteredTemp = await isTaskRegisteredAsync(crons.TODO_REMINDERS);
+		setStatus(statusTemp);
+		setIsRegistered(isRegisteredTemp);
+	};
 
 	useEffect(() => {
 		checkStatusAsync();
 	}, []);
-
-	const checkStatusAsync = async () => {
-		const status = await getStatusAsync();
-		const isRegistered = await isTaskRegisteredAsync(crons.TODO_REMINDERS);
-		setStatus(status);
-		setIsRegistered(isRegistered);
-	};
 
 	const toggleFetchTask = async () => {
 		if (isRegistered) {
@@ -42,7 +41,7 @@ export default function App() {
 					Background fetch task name: <Text>{isRegistered ? crons.TODO_REMINDERS : "Not registered yet!"}</Text>
 				</Text>
 			</View>
-			<View />
+			<View />ß
 			<Button
 				title={isRegistered ? "Unregister BackgroundFetch task" : "Register BackgroundFetch task"}
 				onPress={toggleFetchTask}
