@@ -18,7 +18,7 @@ export default function App() {
 	};
 
 	useEffect(() => {
-		checkStatusAsync();
+		checkStatusAsync().catch(console.error);
 	}, []);
 
 	const toggleFetchTask = async () => {
