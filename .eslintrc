@@ -15,9 +15,19 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       }
+    },
+    {
+      "files": [
+        "!app/**"
+      ],
+      "rules": {
+        "import/no-default-export": 2,
+        "import/prefer-default-export": 0
+      }
     }
   ],
   "rules": {
+    "react/jsx-props-no-spreading": 0,
     "import/extensions": 0,
     "import/no-unresolved": 0,
     "react/jsx-filename-extension": [
@@ -29,6 +39,7 @@
         ]
       }
     ],
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0
   }
 }

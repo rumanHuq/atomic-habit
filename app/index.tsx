@@ -1,50 +1,41 @@
-import { BackgroundFetchStatus, getStatusAsync } from "expo-background-fetch";
-import { isTaskRegisteredAsync } from "expo-task-manager";
-import { useState, useEffect } from "react";
-import { Text, Button, View } from "react-native";
+import { Dimensions } from "react-native";
+import { FlatList } from "react-native-gesture-handler";
 
-import { Page } from "@/components/SafeArea";
-import { crons } from "@/constants/constants";
-import { unregisterBackgroundFetchAsync, registerBackgroundFetchAsync } from "@/crons/crons";
+import { Gallery } from "@/components/Gallery";
+import { Page } from "@/components/Page";
 
 export default function App() {
-	const [isRegistered, setIsRegistered] = useState(false);
-	const [status, setStatus] = useState<BackgroundFetchStatus | null>(null);
-	const checkStatusAsync = async () => {
-		const statusTemp = await getStatusAsync();
-		const isRegisteredTemp = await isTaskRegisteredAsync(crons.TODO_REMINDERS);
-		setStatus(statusTemp);
-		setIsRegistered(isRegisteredTemp);
-	};
-
-	useEffect(() => {
-		checkStatusAsync().catch(console.error);
-	}, []);
-
-	const toggleFetchTask = async () => {
-		if (isRegistered) {
-			await unregisterBackgroundFetchAsync(crons.TODO_REMINDERS);
-		} else {
-			await registerBackgroundFetchAsync(crons.TODO_REMINDERS);
-		}
-
-		checkStatusAsync();
-	};
+	const colors = ["magenta", "green", "blue", "yellow", "limegreen", "papaya"];
+	const { width, height } = Dimensions.get("screen");
 
 	return (
 		<Page>
-			<View>
-				<Text>
-					Background fetch status: <Text>{status && BackgroundFetchStatus[status]}</Text>
-				</Text>
-				<Text>
-					Background fetch task name: <Text>{isRegistered ? crons.TODO_REMINDERS : "Not registered yet!"}</Text>
-				</Text>
-			</View>
-			<View />ß
-			<Button
-				title={isRegistered ? "Unregister BackgroundFetch task" : "Register BackgroundFetch task"}
-				onPress={toggleFetchTask}
+			<FlatList
+				data={colors}
+				keyExtractor={(d) => d}
+				horizontal
+				showsHorizontalScrollIndicator={false}
+				renderItem={({ item: backgroundColor }) => <Gallery style={{ height, width, backgroundColor }} />}
+			/>
+			<FlatList
+				data={colors}
+				horizontal
+				keyExtractor={(d) => d}
+				style={{ position: "absolute", bottom: 100 }}
+				contentContainerStyle={{ paddingHorizontal: 12 }}
+				renderItem={({ item: backgroundColor }) => (
+					<Gallery
+						style={{
+							backgroundColor,
+							height: 100,
+							width: 100,
+							borderRadius: 12,
+							borderColor: "#0f0f0f",
+							borderWidth: 2,
+							marginRight: 12,
+						}}
+					/>
+				)}
 			/>
 		</Page>
 	);
