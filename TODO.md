@@ -1,15 +1,15 @@
-[ ] Create UI layout
-[ ] Create UI layout
+# Features
 
-# Habit builder
-
-## Reminder Prompt
-- What habit you want to create?
-- How long would you want to commit to it, so that I can help you before it is in your habit?
-- When do you want me to remind it?
-
-## Feedback loop
-- At the end of the day, ask if you have achieved the goal. Which were achieved, and which weren't. Create a report
-
-- Custom sound for reminder
-- weekly report
+- Homepage
+  - last 7 days history of exercises, and food intake
+  - summary of calories burned
+  - suggest exercise weight increase percentages after every two week
+- Add/modify exercise page
+  - name of the exercise
+  - category[push | pull | leg], should automatically be determined from last exercise
+  - weight used
+  - date of exercise
+- Add/modify Food intake page
+  - name of the dish
+  - gram slider to adjust actual calories
+  - pull calorie info from API

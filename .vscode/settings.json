@@ -27,5 +27,7 @@
     "typescript"
   ],
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "./node_modules/typescript/lib"
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "plantuml.server": "http://localhost:8080",
+  "plantuml.render": "PlantUMLServer",
 }

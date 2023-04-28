@@ -4,13 +4,15 @@ import { defineTask } from "expo-task-manager";
 import { crons } from "@/constants/constants";
 
 Object.values(crons).forEach((cron) => {
-	defineTask(cron, async () => {
-		// get all the tasks from sqlite table
-		// set notification
-		// remove the entry when a task is executed in notification handler
+	defineTask(
+		cron,
+		async () =>
+			// get all the tasks from sqlite table
+			// set notification
+			// remove the entry when a task is executed in notification handler
 
-		return BackgroundFetchResult.NewData;
-	});
+			BackgroundFetchResult.NewData
+	);
 });
 
 export async function registerBackgroundFetchAsync(cron: keyof typeof crons) {
