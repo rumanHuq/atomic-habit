@@ -1,0 +1,1602 @@
+{
+  "spaghetti": [
+    {
+      "name": "spaghetti",
+      "calories": 42,
+      "serving_size_g": 32,
+      "fat_total_g": 10,
+      "fat_saturated_g": 26,
+      "protein_g": 3,
+      "sodium_mg": 17,
+      "potassium_mg": 48,
+      "cholesterol_mg": 32,
+      "carbohydrates_total_g": 30,
+      "fiber_g": 27,
+      "sugar_g": 15
+    }
+  ],
+  "sushi": [
+    {
+      "name": "sushi",
+      "calories": 26,
+      "serving_size_g": 28,
+      "fat_total_g": 2,
+      "fat_saturated_g": 19,
+      "protein_g": 2,
+      "sodium_mg": 8,
+      "potassium_mg": 34,
+      "cholesterol_mg": 23,
+      "carbohydrates_total_g": 8,
+      "fiber_g": 37,
+      "sugar_g": 16
+    }
+  ],
+  "tacos": [
+    {
+      "name": "tacos",
+      "calories": 42,
+      "serving_size_g": 48,
+      "fat_total_g": 4,
+      "fat_saturated_g": 44,
+      "protein_g": 36,
+      "sodium_mg": 27,
+      "potassium_mg": 36,
+      "cholesterol_mg": 2,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 46,
+      "sugar_g": 14
+    }
+  ],
+  "pancakes": [
+    {
+      "name": "pancakes",
+      "calories": 41,
+      "serving_size_g": 31,
+      "fat_total_g": 2,
+      "fat_saturated_g": 17,
+      "protein_g": 33,
+      "sodium_mg": 43,
+      "potassium_mg": 18,
+      "cholesterol_mg": 16,
+      "carbohydrates_total_g": 47,
+      "fiber_g": 49,
+      "sugar_g": 9
+    }
+  ],
+  "quinoa": [
+    {
+      "name": "quinoa",
+      "calories": 49,
+      "serving_size_g": 35,
+      "fat_total_g": 8,
+      "fat_saturated_g": 26,
+      "protein_g": 13,
+      "sodium_mg": 10,
+      "potassium_mg": 0,
+      "cholesterol_mg": 43,
+      "carbohydrates_total_g": 34,
+      "fiber_g": 2,
+      "sugar_g": 34
+    }
+  ],
+  "falafel": [
+    {
+      "name": "falafel",
+      "calories": 2,
+      "serving_size_g": 39,
+      "fat_total_g": 1,
+      "fat_saturated_g": 33,
+      "protein_g": 8,
+      "sodium_mg": 11,
+      "potassium_mg": 43,
+      "cholesterol_mg": 15,
+      "carbohydrates_total_g": 43,
+      "fiber_g": 20,
+      "sugar_g": 8
+    }
+  ],
+  "pad Thai": [
+    {
+      "name": "pad Thai",
+      "calories": 23,
+      "serving_size_g": 47,
+      "fat_total_g": 7,
+      "fat_saturated_g": 48,
+      "protein_g": 6,
+      "sodium_mg": 50,
+      "potassium_mg": 3,
+      "cholesterol_mg": 12,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 29,
+      "sugar_g": 5
+    }
+  ],
+  "pesto pasta": [
+    {
+      "name": "pesto pasta",
+      "calories": 2,
+      "serving_size_g": 43,
+      "fat_total_g": 0,
+      "fat_saturated_g": 23,
+      "protein_g": 9,
+      "sodium_mg": 30,
+      "potassium_mg": 15,
+      "cholesterol_mg": 19,
+      "carbohydrates_total_g": 14,
+      "fiber_g": 32,
+      "sugar_g": 19
+    }
+  ],
+  "biryani": [
+    {
+      "name": "biryani",
+      "calories": 42,
+      "serving_size_g": 27,
+      "fat_total_g": 41,
+      "fat_saturated_g": 41,
+      "protein_g": 28,
+      "sodium_mg": 0,
+      "potassium_mg": 0,
+      "cholesterol_mg": 47,
+      "carbohydrates_total_g": 6,
+      "fiber_g": 21,
+      "sugar_g": 13
+    }
+  ],
+  "ceviche": [
+    {
+      "name": "ceviche",
+      "calories": 33,
+      "serving_size_g": 26,
+      "fat_total_g": 15,
+      "fat_saturated_g": 16,
+      "protein_g": 15,
+      "sodium_mg": 47,
+      "potassium_mg": 29,
+      "cholesterol_mg": 28,
+      "carbohydrates_total_g": 32,
+      "fiber_g": 36,
+      "sugar_g": 18
+    }
+  ],
+  "paella": [
+    {
+      "name": "paella",
+      "calories": 4,
+      "serving_size_g": 33,
+      "fat_total_g": 31,
+      "fat_saturated_g": 21,
+      "protein_g": 10,
+      "sodium_mg": 24,
+      "potassium_mg": 28,
+      "cholesterol_mg": 26,
+      "carbohydrates_total_g": 23,
+      "fiber_g": 7,
+      "sugar_g": 42
+    }
+  ],
+  "hummus": [
+    {
+      "name": "hummus",
+      "calories": 30,
+      "serving_size_g": 36,
+      "fat_total_g": 42,
+      "fat_saturated_g": 6,
+      "protein_g": 8,
+      "sodium_mg": 16,
+      "potassium_mg": 30,
+      "cholesterol_mg": 48,
+      "carbohydrates_total_g": 6,
+      "fiber_g": 4,
+      "sugar_g": 19
+    }
+  ],
+  "chicken tikka masala": [
+    {
+      "name": "chicken tikka masala",
+      "calories": 24,
+      "serving_size_g": 14,
+      "fat_total_g": 26,
+      "fat_saturated_g": 31,
+      "protein_g": 19,
+      "sodium_mg": 24,
+      "potassium_mg": 10,
+      "cholesterol_mg": 32,
+      "carbohydrates_total_g": 29,
+      "fiber_g": 47,
+      "sugar_g": 20
+    }
+  ],
+  "ramen": [
+    {
+      "name": "ramen",
+      "calories": 12,
+      "serving_size_g": 8,
+      "fat_total_g": 34,
+      "fat_saturated_g": 12,
+      "protein_g": 40,
+      "sodium_mg": 19,
+      "potassium_mg": 28,
+      "cholesterol_mg": 28,
+      "carbohydrates_total_g": 29,
+      "fiber_g": 11,
+      "sugar_g": 22
+    }
+  ],
+  "lobster": [
+    {
+      "name": "lobster",
+      "calories": 14,
+      "serving_size_g": 1,
+      "fat_total_g": 27,
+      "fat_saturated_g": 20,
+      "protein_g": 36,
+      "sodium_mg": 36,
+      "potassium_mg": 9,
+      "cholesterol_mg": 0,
+      "carbohydrates_total_g": 11,
+      "fiber_g": 17,
+      "sugar_g": 8
+    }
+  ],
+  "caesar salad": [
+    {
+      "name": "caesar salad",
+      "calories": 9,
+      "serving_size_g": 28,
+      "fat_total_g": 46,
+      "fat_saturated_g": 40,
+      "protein_g": 3,
+      "sodium_mg": 19,
+      "potassium_mg": 27,
+      "cholesterol_mg": 17,
+      "carbohydrates_total_g": 27,
+      "fiber_g": 28,
+      "sugar_g": 12
+    }
+  ],
+  "poke bowl": [
+    {
+      "name": "poke bowl",
+      "calories": 11,
+      "serving_size_g": 21,
+      "fat_total_g": 10,
+      "fat_saturated_g": 40,
+      "protein_g": 31,
+      "sodium_mg": 8,
+      "potassium_mg": 18,
+      "cholesterol_mg": 3,
+      "carbohydrates_total_g": 7,
+      "fiber_g": 9,
+      "sugar_g": 2
+    }
+  ],
+  "pho": [
+    {
+      "name": "pho",
+      "calories": 6,
+      "serving_size_g": 31,
+      "fat_total_g": 35,
+      "fat_saturated_g": 33,
+      "protein_g": 35,
+      "sodium_mg": 12,
+      "potassium_mg": 4,
+      "cholesterol_mg": 39,
+      "carbohydrates_total_g": 23,
+      "fiber_g": 23,
+      "sugar_g": 33
+    }
+  ],
+  "kimchi": [
+    {
+      "name": "kimchi",
+      "calories": 30,
+      "serving_size_g": 37,
+      "fat_total_g": 27,
+      "fat_saturated_g": 13,
+      "protein_g": 17,
+      "sodium_mg": 33,
+      "potassium_mg": 19,
+      "cholesterol_mg": 19,
+      "carbohydrates_total_g": 41,
+      "fiber_g": 30,
+      "sugar_g": 23
+    }
+  ],
+  "shepherd's pie": [
+    {
+      "name": "shepherd's pie",
+      "calories": 22,
+      "serving_size_g": 33,
+      "fat_total_g": 42,
+      "fat_saturated_g": 34,
+      "protein_g": 44,
+      "sodium_mg": 6,
+      "potassium_mg": 43,
+      "cholesterol_mg": 15,
+      "carbohydrates_total_g": 5,
+      "fiber_g": 2,
+      "sugar_g": 34
+    }
+  ],
+  "lasagna": [
+    {
+      "name": "lasagna",
+      "calories": 21,
+      "serving_size_g": 40,
+      "fat_total_g": 49,
+      "fat_saturated_g": 15,
+      "protein_g": 48,
+      "sodium_mg": 2,
+      "potassium_mg": 3,
+      "cholesterol_mg": 48,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 42,
+      "sugar_g": 50
+    }
+  ],
+  "enchiladas": [
+    {
+      "name": "enchiladas",
+      "calories": 21,
+      "serving_size_g": 36,
+      "fat_total_g": 50,
+      "fat_saturated_g": 43,
+      "protein_g": 40,
+      "sodium_mg": 39,
+      "potassium_mg": 28,
+      "cholesterol_mg": 44,
+      "carbohydrates_total_g": 34,
+      "fiber_g": 21,
+      "sugar_g": 7
+    }
+  ],
+  "bruschetta": [
+    {
+      "name": "bruschetta",
+      "calories": 3,
+      "serving_size_g": 4,
+      "fat_total_g": 40,
+      "fat_saturated_g": 16,
+      "protein_g": 1,
+      "sodium_mg": 43,
+      "potassium_mg": 27,
+      "cholesterol_mg": 22,
+      "carbohydrates_total_g": 6,
+      "fiber_g": 9,
+      "sugar_g": 38
+    }
+  ],
+  "goulash": [
+    {
+      "name": "goulash",
+      "calories": 43,
+      "serving_size_g": 19,
+      "fat_total_g": 7,
+      "fat_saturated_g": 47,
+      "protein_g": 31,
+      "sodium_mg": 14,
+      "potassium_mg": 33,
+      "cholesterol_mg": 23,
+      "carbohydrates_total_g": 22,
+      "fiber_g": 38,
+      "sugar_g": 22
+    }
+  ],
+  "coq au vin": [
+    {
+      "name": "coq au vin",
+      "calories": 38,
+      "serving_size_g": 47,
+      "fat_total_g": 6,
+      "fat_saturated_g": 47,
+      "protein_g": 18,
+      "sodium_mg": 3,
+      "potassium_mg": 6,
+      "cholesterol_mg": 41,
+      "carbohydrates_total_g": 39,
+      "fiber_g": 42,
+      "sugar_g": 26
+    }
+  ],
+  "jambalaya": [
+    {
+      "name": "jambalaya",
+      "calories": 15,
+      "serving_size_g": 7,
+      "fat_total_g": 15,
+      "fat_saturated_g": 36,
+      "protein_g": 20,
+      "sodium_mg": 17,
+      "potassium_mg": 46,
+      "cholesterol_mg": 5,
+      "carbohydrates_total_g": 26,
+      "fiber_g": 29,
+      "sugar_g": 18
+    }
+  ],
+  "moussaka": [
+    {
+      "name": "moussaka",
+      "calories": 9,
+      "serving_size_g": 50,
+      "fat_total_g": 40,
+      "fat_saturated_g": 29,
+      "protein_g": 44,
+      "sodium_mg": 42,
+      "potassium_mg": 28,
+      "cholesterol_mg": 5,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 11,
+      "sugar_g": 13
+    }
+  ],
+  "risotto": [
+    {
+      "name": "risotto",
+      "calories": 29,
+      "serving_size_g": 41,
+      "fat_total_g": 43,
+      "fat_saturated_g": 46,
+      "protein_g": 46,
+      "sodium_mg": 4,
+      "potassium_mg": 40,
+      "cholesterol_mg": 8,
+      "carbohydrates_total_g": 43,
+      "fiber_g": 5,
+      "sugar_g": 5
+    }
+  ],
+  "tikka masala": [
+    {
+      "name": "tikka masala",
+      "calories": 20,
+      "serving_size_g": 31,
+      "fat_total_g": 19,
+      "fat_saturated_g": 4,
+      "protein_g": 32,
+      "sodium_mg": 10,
+      "potassium_mg": 14,
+      "cholesterol_mg": 11,
+      "carbohydrates_total_g": 26,
+      "fiber_g": 30,
+      "sugar_g": 15
+    }
+  ],
+  "pad kra pao": [
+    {
+      "name": "pad kra pao",
+      "calories": 34,
+      "serving_size_g": 34,
+      "fat_total_g": 35,
+      "fat_saturated_g": 47,
+      "protein_g": 1,
+      "sodium_mg": 50,
+      "potassium_mg": 0,
+      "cholesterol_mg": 25,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 37,
+      "sugar_g": 47
+    }
+  ],
+  "bibimbap": [
+    {
+      "name": "bibimbap",
+      "calories": 50,
+      "serving_size_g": 45,
+      "fat_total_g": 33,
+      "fat_saturated_g": 17,
+      "protein_g": 10,
+      "sodium_mg": 21,
+      "potassium_mg": 47,
+      "cholesterol_mg": 40,
+      "carbohydrates_total_g": 27,
+      "fiber_g": 40,
+      "sugar_g": 33
+    }
+  ],
+  "beef bourguignon": [
+    {
+      "name": "beef bourguignon",
+      "calories": 34,
+      "serving_size_g": 49,
+      "fat_total_g": 21,
+      "fat_saturated_g": 16,
+      "protein_g": 7,
+      "sodium_mg": 9,
+      "potassium_mg": 25,
+      "cholesterol_mg": 13,
+      "carbohydrates_total_g": 27,
+      "fiber_g": 22,
+      "sugar_g": 36
+    }
+  ],
+  "gnocchi": [
+    {
+      "name": "gnocchi",
+      "calories": 47,
+      "serving_size_g": 0,
+      "fat_total_g": 49,
+      "fat_saturated_g": 9,
+      "protein_g": 31,
+      "sodium_mg": 11,
+      "potassium_mg": 14,
+      "cholesterol_mg": 11,
+      "carbohydrates_total_g": 19,
+      "fiber_g": 45,
+      "sugar_g": 45
+    }
+  ],
+  "falooda": [
+    {
+      "name": "falooda",
+      "calories": 11,
+      "serving_size_g": 39,
+      "fat_total_g": 50,
+      "fat_saturated_g": 12,
+      "protein_g": 49,
+      "sodium_mg": 8,
+      "potassium_mg": 21,
+      "cholesterol_mg": 27,
+      "carbohydrates_total_g": 47,
+      "fiber_g": 19,
+      "sugar_g": 28
+    }
+  ],
+  "shakshuka": [
+    {
+      "name": "shakshuka",
+      "calories": 16,
+      "serving_size_g": 34,
+      "fat_total_g": 15,
+      "fat_saturated_g": 14,
+      "protein_g": 6,
+      "sodium_mg": 29,
+      "potassium_mg": 3,
+      "cholesterol_mg": 45,
+      "carbohydrates_total_g": 37,
+      "fiber_g": 46,
+      "sugar_g": 37
+    }
+  ],
+  "chimichanga": [
+    {
+      "name": "chimichanga",
+      "calories": 24,
+      "serving_size_g": 28,
+      "fat_total_g": 20,
+      "fat_saturated_g": 24,
+      "protein_g": 10,
+      "sodium_mg": 41,
+      "potassium_mg": 2,
+      "cholesterol_mg": 27,
+      "carbohydrates_total_g": 9,
+      "fiber_g": 44,
+      "sugar_g": 19
+    }
+  ],
+  "fajitas": [
+    {
+      "name": "fajitas",
+      "calories": 30,
+      "serving_size_g": 31,
+      "fat_total_g": 18,
+      "fat_saturated_g": 42,
+      "protein_g": 7,
+      "sodium_mg": 11,
+      "potassium_mg": 48,
+      "cholesterol_mg": 33,
+      "carbohydrates_total_g": 20,
+      "fiber_g": 16,
+      "sugar_g": 20
+    }
+  ],
+  "dal makhani": [
+    {
+      "name": "dal makhani",
+      "calories": 5,
+      "serving_size_g": 46,
+      "fat_total_g": 3,
+      "fat_saturated_g": 37,
+      "protein_g": 30,
+      "sodium_mg": 10,
+      "potassium_mg": 49,
+      "cholesterol_mg": 22,
+      "carbohydrates_total_g": 23,
+      "fiber_g": 11,
+      "sugar_g": 0
+    }
+  ],
+  "nachos": [
+    {
+      "name": "nachos",
+      "calories": 47,
+      "serving_size_g": 19,
+      "fat_total_g": 5,
+      "fat_saturated_g": 18,
+      "protein_g": 38,
+      "sodium_mg": 33,
+      "potassium_mg": 8,
+      "cholesterol_mg": 20,
+      "carbohydrates_total_g": 18,
+      "fiber_g": 45,
+      "sugar_g": 35
+    }
+  ],
+  "kebab": [
+    {
+      "name": "kebab",
+      "calories": 26,
+      "serving_size_g": 8,
+      "fat_total_g": 13,
+      "fat_saturated_g": 7,
+      "protein_g": 43,
+      "sodium_mg": 32,
+      "potassium_mg": 34,
+      "cholesterol_mg": 3,
+      "carbohydrates_total_g": 49,
+      "fiber_g": 16,
+      "sugar_g": 40
+    }
+  ],
+  "crepes": [
+    {
+      "name": "crepes",
+      "calories": 38,
+      "serving_size_g": 21,
+      "fat_total_g": 33,
+      "fat_saturated_g": 3,
+      "protein_g": 36,
+      "sodium_mg": 32,
+      "potassium_mg": 36,
+      "cholesterol_mg": 49,
+      "carbohydrates_total_g": 8,
+      "fiber_g": 47,
+      "sugar_g": 0
+    }
+  ],
+  "caesar wrap": [
+    {
+      "name": "caesar wrap",
+      "calories": 19,
+      "serving_size_g": 4,
+      "fat_total_g": 38,
+      "fat_saturated_g": 37,
+      "protein_g": 21,
+      "sodium_mg": 23,
+      "potassium_mg": 7,
+      "cholesterol_mg": 11,
+      "carbohydrates_total_g": 10,
+      "fiber_g": 26,
+      "sugar_g": 2
+    }
+  ],
+  "club sandwich": [
+    {
+      "name": "club sandwich",
+      "calories": 35,
+      "serving_size_g": 3,
+      "fat_total_g": 49,
+      "fat_saturated_g": 38,
+      "protein_g": 19,
+      "sodium_mg": 6,
+      "potassium_mg": 14,
+      "cholesterol_mg": 10,
+      "carbohydrates_total_g": 33,
+      "fiber_g": 18,
+      "sugar_g": 27
+    }
+  ],
+  "burrito": [
+    {
+      "name": "burrito",
+      "calories": 6,
+      "serving_size_g": 25,
+      "fat_total_g": 27,
+      "fat_saturated_g": 2,
+      "protein_g": 41,
+      "sodium_mg": 38,
+      "potassium_mg": 25,
+      "cholesterol_mg": 36,
+      "carbohydrates_total_g": 40,
+      "fiber_g": 38,
+      "sugar_g": 37
+    }
+  ],
+  "meatball sub": [
+    {
+      "name": "meatball sub",
+      "calories": 28,
+      "serving_size_g": 10,
+      "fat_total_g": 6,
+      "fat_saturated_g": 39,
+      "protein_g": 48,
+      "sodium_mg": 16,
+      "potassium_mg": 14,
+      "cholesterol_mg": 29,
+      "carbohydrates_total_g": 36,
+      "fiber_g": 15,
+      "sugar_g": 38
+    }
+  ],
+  "reuben sandwich": [
+    {
+      "name": "reuben sandwich",
+      "calories": 35,
+      "serving_size_g": 4,
+      "fat_total_g": 14,
+      "fat_saturated_g": 17,
+      "protein_g": 36,
+      "sodium_mg": 11,
+      "potassium_mg": 16,
+      "cholesterol_mg": 16,
+      "carbohydrates_total_g": 27,
+      "fiber_g": 7,
+      "sugar_g": 4
+    }
+  ],
+  "pulled pork sandwich": [
+    {
+      "name": "pulled pork sandwich",
+      "calories": 23,
+      "serving_size_g": 0,
+      "fat_total_g": 4,
+      "fat_saturated_g": 6,
+      "protein_g": 43,
+      "sodium_mg": 40,
+      "potassium_mg": 26,
+      "cholesterol_mg": 2,
+      "carbohydrates_total_g": 49,
+      "fiber_g": 9,
+      "sugar_g": 2
+    }
+  ],
+  "philly cheesesteak": [
+    {
+      "name": "philly cheesesteak",
+      "calories": 24,
+      "serving_size_g": 34,
+      "fat_total_g": 50,
+      "fat_saturated_g": 2,
+      "protein_g": 28,
+      "sodium_mg": 17,
+      "potassium_mg": 11,
+      "cholesterol_mg": 18,
+      "carbohydrates_total_g": 12,
+      "fiber_g": 26,
+      "sugar_g": 17
+    }
+  ],
+  "grilled cheese": [
+    {
+      "name": "grilled cheese",
+      "calories": 30,
+      "serving_size_g": 31,
+      "fat_total_g": 24,
+      "fat_saturated_g": 34,
+      "protein_g": 32,
+      "sodium_mg": 13,
+      "potassium_mg": 4,
+      "cholesterol_mg": 20,
+      "carbohydrates_total_g": 31,
+      "fiber_g": 39,
+      "sugar_g": 4
+    }
+  ],
+  "bLT sandwich": [
+    {
+      "name": "bLT sandwich",
+      "calories": 42,
+      "serving_size_g": 33,
+      "fat_total_g": 42,
+      "fat_saturated_g": 30,
+      "protein_g": 4,
+      "sodium_mg": 35,
+      "potassium_mg": 26,
+      "cholesterol_mg": 25,
+      "carbohydrates_total_g": 0,
+      "fiber_g": 42,
+      "sugar_g": 30
+    }
+  ],
+  "bagel and cream cheese": [
+    {
+      "name": "bagel and cream cheese",
+      "calories": 24,
+      "serving_size_g": 0,
+      "fat_total_g": 31,
+      "fat_saturated_g": 22,
+      "protein_g": 2,
+      "sodium_mg": 32,
+      "potassium_mg": 48,
+      "cholesterol_mg": 1,
+      "carbohydrates_total_g": 49,
+      "fiber_g": 18,
+      "sugar_g": 21
+    }
+  ],
+  "croissant": [
+    {
+      "name": "croissant",
+      "calories": 24,
+      "serving_size_g": 38,
+      "fat_total_g": 15,
+      "fat_saturated_g": 10,
+      "protein_g": 3,
+      "sodium_mg": 8,
+      "potassium_mg": 28,
+      "cholesterol_mg": 4,
+      "carbohydrates_total_g": 46,
+      "fiber_g": 41,
+      "sugar_g": 1
+    }
+  ],
+  "focaccia bread": [
+    {
+      "name": "focaccia bread",
+      "calories": 32,
+      "serving_size_g": 25,
+      "fat_total_g": 2,
+      "fat_saturated_g": 25,
+      "protein_g": 49,
+      "sodium_mg": 16,
+      "potassium_mg": 26,
+      "cholesterol_mg": 26,
+      "carbohydrates_total_g": 20,
+      "fiber_g": 39,
+      "sugar_g": 4
+    }
+  ],
+  "pita bread": [
+    {
+      "name": "pita bread",
+      "calories": 1,
+      "serving_size_g": 20,
+      "fat_total_g": 16,
+      "fat_saturated_g": 10,
+      "protein_g": 36,
+      "sodium_mg": 47,
+      "potassium_mg": 10,
+      "cholesterol_mg": 5,
+      "carbohydrates_total_g": 33,
+      "fiber_g": 25,
+      "sugar_g": 45
+    }
+  ],
+  "naan bread": [
+    {
+      "name": "naan bread",
+      "calories": 18,
+      "serving_size_g": 34,
+      "fat_total_g": 40,
+      "fat_saturated_g": 11,
+      "protein_g": 32,
+      "sodium_mg": 4,
+      "potassium_mg": 11,
+      "cholesterol_mg": 7,
+      "carbohydrates_total_g": 36,
+      "fiber_g": 49,
+      "sugar_g": 11
+    }
+  ],
+  "baguette": [
+    {
+      "name": "baguette",
+      "calories": 47,
+      "serving_size_g": 13,
+      "fat_total_g": 29,
+      "fat_saturated_g": 50,
+      "protein_g": 4,
+      "sodium_mg": 42,
+      "potassium_mg": 17,
+      "cholesterol_mg": 45,
+      "carbohydrates_total_g": 5,
+      "fiber_g": 18,
+      "sugar_g": 19
+    }
+  ],
+  "sourdough bread": [
+    {
+      "name": "sourdough bread",
+      "calories": 37,
+      "serving_size_g": 37,
+      "fat_total_g": 35,
+      "fat_saturated_g": 1,
+      "protein_g": 27,
+      "sodium_mg": 8,
+      "potassium_mg": 46,
+      "cholesterol_mg": 12,
+      "carbohydrates_total_g": 6,
+      "fiber_g": 26,
+      "sugar_g": 4
+    }
+  ],
+  "rye bread": [
+    {
+      "name": "rye bread",
+      "calories": 11,
+      "serving_size_g": 24,
+      "fat_total_g": 11,
+      "fat_saturated_g": 9,
+      "protein_g": 18,
+      "sodium_mg": 38,
+      "potassium_mg": 5,
+      "cholesterol_mg": 45,
+      "carbohydrates_total_g": 41,
+      "fiber_g": 15,
+      "sugar_g": 39
+    }
+  ],
+  "challah bread": [
+    {
+      "name": "challah bread",
+      "calories": 13,
+      "serving_size_g": 43,
+      "fat_total_g": 5,
+      "fat_saturated_g": 22,
+      "protein_g": 37,
+      "sodium_mg": 30,
+      "potassium_mg": 34,
+      "cholesterol_mg": 22,
+      "carbohydrates_total_g": 26,
+      "fiber_g": 46,
+      "sugar_g": 4
+    }
+  ],
+  "tortilla chips": [
+    {
+      "name": "tortilla chips",
+      "calories": 45,
+      "serving_size_g": 23,
+      "fat_total_g": 50,
+      "fat_saturated_g": 48,
+      "protein_g": 49,
+      "sodium_mg": 39,
+      "potassium_mg": 10,
+      "cholesterol_mg": 6,
+      "carbohydrates_total_g": 7,
+      "fiber_g": 23,
+      "sugar_g": 29
+    }
+  ],
+  "popcorn": [
+    {
+      "name": "popcorn",
+      "calories": 28,
+      "serving_size_g": 30,
+      "fat_total_g": 10,
+      "fat_saturated_g": 35,
+      "protein_g": 20,
+      "sodium_mg": 9,
+      "potassium_mg": 4,
+      "cholesterol_mg": 11,
+      "carbohydrates_total_g": 47,
+      "fiber_g": 46,
+      "sugar_g": 8
+    }
+  ],
+  "potato chips": [
+    {
+      "name": "potato chips",
+      "calories": 19,
+      "serving_size_g": 29,
+      "fat_total_g": 15,
+      "fat_saturated_g": 35,
+      "protein_g": 25,
+      "sodium_mg": 19,
+      "potassium_mg": 33,
+      "cholesterol_mg": 6,
+      "carbohydrates_total_g": 39,
+      "fiber_g": 2,
+      "sugar_g": 38
+    }
+  ],
+  "pretzels": [
+    {
+      "name": "pretzels",
+      "calories": 26,
+      "serving_size_g": 34,
+      "fat_total_g": 18,
+      "fat_saturated_g": 8,
+      "protein_g": 44,
+      "sodium_mg": 15,
+      "potassium_mg": 8,
+      "cholesterol_mg": 4,
+      "carbohydrates_total_g": 1,
+      "fiber_g": 17,
+      "sugar_g": 26
+    }
+  ],
+  "trail mix": [
+    {
+      "name": "trail mix",
+      "calories": 16,
+      "serving_size_g": 16,
+      "fat_total_g": 25,
+      "fat_saturated_g": 33,
+      "protein_g": 28,
+      "sodium_mg": 41,
+      "potassium_mg": 12,
+      "cholesterol_mg": 37,
+      "carbohydrates_total_g": 11,
+      "fiber_g": 20,
+      "sugar_g": 48
+    }
+  ],
+  "granola bars": [
+    {
+      "name": "granola bars",
+      "calories": 1,
+      "serving_size_g": 24,
+      "fat_total_g": 49,
+      "fat_saturated_g": 21,
+      "protein_g": 2,
+      "sodium_mg": 28,
+      "potassium_mg": 50,
+      "cholesterol_mg": 46,
+      "carbohydrates_total_g": 3,
+      "fiber_g": 22,
+      "sugar_g": 37
+    }
+  ],
+  "almonds": [
+    {
+      "name": "almonds",
+      "calories": 39,
+      "serving_size_g": 14,
+      "fat_total_g": 0,
+      "fat_saturated_g": 41,
+      "protein_g": 37,
+      "sodium_mg": 8,
+      "potassium_mg": 21,
+      "cholesterol_mg": 30,
+      "carbohydrates_total_g": 21,
+      "fiber_g": 37,
+      "sugar_g": 39
+    }
+  ],
+  "pistachios": [
+    {
+      "name": "pistachios",
+      "calories": 27,
+      "serving_size_g": 18,
+      "fat_total_g": 40,
+      "fat_saturated_g": 8,
+      "protein_g": 29,
+      "sodium_mg": 25,
+      "potassium_mg": 7,
+      "cholesterol_mg": 40,
+      "carbohydrates_total_g": 28,
+      "fiber_g": 18,
+      "sugar_g": 38
+    }
+  ],
+  "cashews": [
+    {
+      "name": "cashews",
+      "calories": 40,
+      "serving_size_g": 18,
+      "fat_total_g": 28,
+      "fat_saturated_g": 0,
+      "protein_g": 9,
+      "sodium_mg": 3,
+      "potassium_mg": 34,
+      "cholesterol_mg": 37,
+      "carbohydrates_total_g": 16,
+      "fiber_g": 31,
+      "sugar_g": 50
+    }
+  ],
+  "walnuts": [
+    {
+      "name": "walnuts",
+      "calories": 38,
+      "serving_size_g": 11,
+      "fat_total_g": 16,
+      "fat_saturated_g": 5,
+      "protein_g": 48,
+      "sodium_mg": 47,
+      "potassium_mg": 23,
+      "cholesterol_mg": 17,
+      "carbohydrates_total_g": 50,
+      "fiber_g": 25,
+      "sugar_g": 36
+    }
+  ],
+  "pecans": [
+    {
+      "name": "pecans",
+      "calories": 30,
+      "serving_size_g": 24,
+      "fat_total_g": 3,
+      "fat_saturated_g": 34,
+      "protein_g": 40,
+      "sodium_mg": 20,
+      "potassium_mg": 21,
+      "cholesterol_mg": 21,
+      "carbohydrates_total_g": 25,
+      "fiber_g": 31,
+      "sugar_g": 42
+    }
+  ],
+  "macadamia nuts": [
+    {
+      "name": "macadamia nuts",
+      "calories": 48,
+      "serving_size_g": 40,
+      "fat_total_g": 18,
+      "fat_saturated_g": 18,
+      "protein_g": 34,
+      "sodium_mg": 22,
+      "potassium_mg": 18,
+      "cholesterol_mg": 9,
+      "carbohydrates_total_g": 24,
+      "fiber_g": 12,
+      "sugar_g": 38
+    }
+  ],
+  "hazelnuts": [
+    {
+      "name": "hazelnuts",
+      "calories": 35,
+      "serving_size_g": 28,
+      "fat_total_g": 5,
+      "fat_saturated_g": 48,
+      "protein_g": 19,
+      "sodium_mg": 29,
+      "potassium_mg": 11,
+      "cholesterol_mg": 38,
+      "carbohydrates_total_g": 27,
+      "fiber_g": 18,
+      "sugar_g": 0
+    }
+  ],
+  "brazil nuts": [
+    {
+      "name": "brazil nuts",
+      "calories": 15,
+      "serving_size_g": 10,
+      "fat_total_g": 24,
+      "fat_saturated_g": 32,
+      "protein_g": 31,
+      "sodium_mg": 0,
+      "potassium_mg": 24,
+      "cholesterol_mg": 3,
+      "carbohydrates_total_g": 42,
+      "fiber_g": 44,
+      "sugar_g": 24
+    }
+  ],
+  "sunflower seeds": [
+    {
+      "name": "sunflower seeds",
+      "calories": 34,
+      "serving_size_g": 32,
+      "fat_total_g": 17,
+      "fat_saturated_g": 47,
+      "protein_g": 49,
+      "sodium_mg": 7,
+      "potassium_mg": 4,
+      "cholesterol_mg": 28,
+      "carbohydrates_total_g": 31,
+      "fiber_g": 12,
+      "sugar_g": 39
+    }
+  ],
+  "pumpkin seeds": [
+    {
+      "name": "pumpkin seeds",
+      "calories": 47,
+      "serving_size_g": 6,
+      "fat_total_g": 17,
+      "fat_saturated_g": 37,
+      "protein_g": 40,
+      "sodium_mg": 38,
+      "potassium_mg": 11,
+      "cholesterol_mg": 50,
+      "carbohydrates_total_g": 33,
+      "fiber_g": 13,
+      "sugar_g": 46
+    }
+  ],
+  "flax seeds": [
+    {
+      "name": "flax seeds",
+      "calories": 12,
+      "serving_size_g": 41,
+      "fat_total_g": 49,
+      "fat_saturated_g": 27,
+      "protein_g": 49,
+      "sodium_mg": 7,
+      "potassium_mg": 47,
+      "cholesterol_mg": 23,
+      "carbohydrates_total_g": 36,
+      "fiber_g": 27,
+      "sugar_g": 19
+    }
+  ],
+  "chia seeds": [
+    {
+      "name": "chia seeds",
+      "calories": 33,
+      "serving_size_g": 24,
+      "fat_total_g": 28,
+      "fat_saturated_g": 34,
+      "protein_g": 36,
+      "sodium_mg": 28,
+      "potassium_mg": 1,
+      "cholesterol_mg": 14,
+      "carbohydrates_total_g": 38,
+      "fiber_g": 11,
+      "sugar_g": 43
+    }
+  ],
+  "hemp seeds": [
+    {
+      "name": "hemp seeds",
+      "calories": 5,
+      "serving_size_g": 2,
+      "fat_total_g": 45,
+      "fat_saturated_g": 8,
+      "protein_g": 49,
+      "sodium_mg": 45,
+      "potassium_mg": 23,
+      "cholesterol_mg": 35,
+      "carbohydrates_total_g": 21,
+      "fiber_g": 12,
+      "sugar_g": 12
+    }
+  ],
+  "sesame seeds": [
+    {
+      "name": "sesame seeds",
+      "calories": 39,
+      "serving_size_g": 10,
+      "fat_total_g": 12,
+      "fat_saturated_g": 28,
+      "protein_g": 28,
+      "sodium_mg": 43,
+      "potassium_mg": 25,
+      "cholesterol_mg": 27,
+      "carbohydrates_total_g": 49,
+      "fiber_g": 43,
+      "sugar_g": 37
+    }
+  ],
+  "quinoa salad": [
+    {
+      "name": "quinoa salad",
+      "calories": 44,
+      "serving_size_g": 48,
+      "fat_total_g": 36,
+      "fat_saturated_g": 12,
+      "protein_g": 9,
+      "sodium_mg": 50,
+      "potassium_mg": 6,
+      "cholesterol_mg": 50,
+      "carbohydrates_total_g": 29,
+      "fiber_g": 0,
+      "sugar_g": 21
+    }
+  ],
+  "tabouli salad": [
+    {
+      "name": "tabouli salad",
+      "calories": 8,
+      "serving_size_g": 12,
+      "fat_total_g": 25,
+      "fat_saturated_g": 25,
+      "protein_g": 13,
+      "sodium_mg": 26,
+      "potassium_mg": 23,
+      "cholesterol_mg": 21,
+      "carbohydrates_total_g": 11,
+      "fiber_g": 1,
+      "sugar_g": 8
+    }
+  ],
+  "greek salad": [
+    {
+      "name": "greek salad",
+      "calories": 16,
+      "serving_size_g": 44,
+      "fat_total_g": 42,
+      "fat_saturated_g": 46,
+      "protein_g": 38,
+      "sodium_mg": 45,
+      "potassium_mg": 40,
+      "cholesterol_mg": 21,
+      "carbohydrates_total_g": 18,
+      "fiber_g": 0,
+      "sugar_g": 12
+    }
+  ],
+  "caprese salad": [
+    {
+      "name": "caprese salad",
+      "calories": 22,
+      "serving_size_g": 32,
+      "fat_total_g": 20,
+      "fat_saturated_g": 28,
+      "protein_g": 28,
+      "sodium_mg": 49,
+      "potassium_mg": 19,
+      "cholesterol_mg": 13,
+      "carbohydrates_total_g": 33,
+      "fiber_g": 37,
+      "sugar_g": 43
+    }
+  ],
+  "cobb salad": [
+    {
+      "name": "cobb salad",
+      "calories": 37,
+      "serving_size_g": 30,
+      "fat_total_g": 13,
+      "fat_saturated_g": 13,
+      "protein_g": 8,
+      "sodium_mg": 24,
+      "potassium_mg": 6,
+      "cholesterol_mg": 9,
+      "carbohydrates_total_g": 23,
+      "fiber_g": 12,
+      "sugar_g": 16
+    }
+  ],
+  "waldorf salad": [
+    {
+      "name": "waldorf salad",
+      "calories": 50,
+      "serving_size_g": 26,
+      "fat_total_g": 22,
+      "fat_saturated_g": 14,
+      "protein_g": 1,
+      "sodium_mg": 39,
+      "potassium_mg": 39,
+      "cholesterol_mg": 19,
+      "carbohydrates_total_g": 17,
+      "fiber_g": 14,
+      "sugar_g": 16
+    }
+  ],
+  "caesar salad wrap": [
+    {
+      "name": "caesar salad wrap",
+      "calories": 40,
+      "serving_size_g": 42,
+      "fat_total_g": 23,
+      "fat_saturated_g": 48,
+      "protein_g": 18,
+      "sodium_mg": 31,
+      "potassium_mg": 12,
+      "cholesterol_mg": 27,
+      "carbohydrates_total_g": 28,
+      "fiber_g": 38,
+      "sugar_g": 27
+    }
+  ],
+  "garden salad": [
+    {
+      "name": "garden salad",
+      "calories": 44,
+      "serving_size_g": 22,
+      "fat_total_g": 18,
+      "fat_saturated_g": 49,
+      "protein_g": 42,
+      "sodium_mg": 27,
+      "potassium_mg": 35,
+      "cholesterol_mg": 12,
+      "carbohydrates_total_g": 50,
+      "fiber_g": 42,
+      "sugar_g": 31
+    }
+  ],
+  "potato salad": [
+    {
+      "name": "potato salad",
+      "calories": 42,
+      "serving_size_g": 26,
+      "fat_total_g": 40,
+      "fat_saturated_g": 45,
+      "protein_g": 15,
+      "sodium_mg": 36,
+      "potassium_mg": 42,
+      "cholesterol_mg": 30,
+      "carbohydrates_total_g": 6,
+      "fiber_g": 25,
+      "sugar_g": 8
+    }
+  ],
+  "coleslaw": [
+    {
+      "name": "coleslaw",
+      "calories": 14,
+      "serving_size_g": 4,
+      "fat_total_g": 35,
+      "fat_saturated_g": 8,
+      "protein_g": 44,
+      "sodium_mg": 38,
+      "potassium_mg": 41,
+      "cholesterol_mg": 49,
+      "carbohydrates_total_g": 5,
+      "fiber_g": 48,
+      "sugar_g": 3
+    }
+  ],
+  "broccoli salad": [
+    {
+      "name": "broccoli salad",
+      "calories": 25,
+      "serving_size_g": 36,
+      "fat_total_g": 36,
+      "fat_saturated_g": 34,
+      "protein_g": 15,
+      "sodium_mg": 29,
+      "potassium_mg": 46,
+      "cholesterol_mg": 25,
+      "carbohydrates_total_g": 24,
+      "fiber_g": 38,
+      "sugar_g": 23
+    }
+  ],
+  "egg salad": [
+    {
+      "name": "egg salad",
+      "calories": 44,
+      "serving_size_g": 45,
+      "fat_total_g": 46,
+      "fat_saturated_g": 49,
+      "protein_g": 10,
+      "sodium_mg": 27,
+      "potassium_mg": 48,
+      "cholesterol_mg": 10,
+      "carbohydrates_total_g": 10,
+      "fiber_g": 3,
+      "sugar_g": 18
+    }
+  ],
+  "tuna salad": [
+    {
+      "name": "tuna salad",
+      "calories": 32,
+      "serving_size_g": 20,
+      "fat_total_g": 17,
+      "fat_saturated_g": 39,
+      "protein_g": 31,
+      "sodium_mg": 21,
+      "potassium_mg": 10,
+      "cholesterol_mg": 30,
+      "carbohydrates_total_g": 30,
+      "fiber_g": 43,
+      "sugar_g": 50
+    }
+  ],
+  "chicken salad": [
+    {
+      "name": "chicken salad",
+      "calories": 32,
+      "serving_size_g": 29,
+      "fat_total_g": 43,
+      "fat_saturated_g": 25,
+      "protein_g": 37,
+      "sodium_mg": 36,
+      "potassium_mg": 48,
+      "cholesterol_mg": 30,
+      "carbohydrates_total_g": 33,
+      "fiber_g": 3,
+      "sugar_g": 15
+    }
+  ],
+  "fruit salad": [
+    {
+      "name": "fruit salad",
+      "calories": 6,
+      "serving_size_g": 7,
+      "fat_total_g": 28,
+      "fat_saturated_g": 3,
+      "protein_g": 36,
+      "sodium_mg": 24,
+      "potassium_mg": 35,
+      "cholesterol_mg": 37,
+      "carbohydrates_total_g": 47,
+      "fiber_g": 47,
+      "sugar_g": 0
+    }
+  ],
+  "ambrosia salad": [
+    {
+      "name": "ambrosia salad",
+      "calories": 48,
+      "serving_size_g": 18,
+      "fat_total_g": 42,
+      "fat_saturated_g": 8,
+      "protein_g": 40,
+      "sodium_mg": 11,
+      "potassium_mg": 42,
+      "cholesterol_mg": 48,
+      "carbohydrates_total_g": 28,
+      "fiber_g": 4,
+      "sugar_g": 22
+    }
+  ],
+  "waldorf chicken salad": [
+    {
+      "name": "waldorf chicken salad",
+      "calories": 32,
+      "serving_size_g": 49,
+      "fat_total_g": 8,
+      "fat_saturated_g": 10,
+      "protein_g": 6,
+      "sodium_mg": 16,
+      "potassium_mg": 49,
+      "cholesterol_mg": 41,
+      "carbohydrates_total_g": 47,
+      "fiber_g": 31,
+      "sugar_g": 41
+    }
+  ],
+  "shrimp salad": [
+    {
+      "name": "shrimp salad",
+      "calories": 17,
+      "serving_size_g": 34,
+      "fat_total_g": 34,
+      "fat_saturated_g": 20,
+      "protein_g": 32,
+      "sodium_mg": 16,
+      "potassium_mg": 15,
+      "cholesterol_mg": 26,
+      "carbohydrates_total_g": 16,
+      "fiber_g": 27,
+      "sugar_g": 25
+    }
+  ],
+  "crab salad": [
+    {
+      "name": "crab salad",
+      "calories": 15,
+      "serving_size_g": 20,
+      "fat_total_g": 20,
+      "fat_saturated_g": 29,
+      "protein_g": 14,
+      "sodium_mg": 10,
+      "potassium_mg": 44,
+      "cholesterol_mg": 21,
+      "carbohydrates_total_g": 38,
+      "fiber_g": 14,
+      "sugar_g": 44
+    }
+  ],
+  "avocado toast": [
+    {
+      "name": "avocado toast",
+      "calories": 8,
+      "serving_size_g": 34,
+      "fat_total_g": 20,
+      "fat_saturated_g": 14,
+      "protein_g": 39,
+      "sodium_mg": 35,
+      "potassium_mg": 6,
+      "cholesterol_mg": 49,
+      "carbohydrates_total_g": 42,
+      "fiber_g": 38,
+      "sugar_g": 8
+    }
+  ],
+  "french toast": [
+    {
+      "name": "french toast",
+      "calories": 6,
+      "serving_size_g": 11,
+      "fat_total_g": 17,
+      "fat_saturated_g": 17,
+      "protein_g": 39,
+      "sodium_mg": 14,
+      "potassium_mg": 44,
+      "cholesterol_mg": 30,
+      "carbohydrates_total_g": 12,
+      "fiber_g": 34,
+      "sugar_g": 14
+    }
+  ]
+}

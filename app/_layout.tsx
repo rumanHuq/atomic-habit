@@ -10,6 +10,7 @@ import { useColorScheme, AppState, Platform } from "react-native";
 import type { AppStateStatus } from "react-native";
 
 import { appTheme } from "@/theme";
+import { createFile } from "@/utils/fileSystem";
 
 function onAppStateChange(status: AppStateStatus) {
 	if (Platform.OS !== "web") {
@@ -55,7 +56,7 @@ export default function Layout() {
 
 	useEffect(() => {
 		const subscription = AppState.addEventListener("change", onAppStateChange);
-
+		createFile();
 		return () => subscription.remove();
 	}, []);
 	return (

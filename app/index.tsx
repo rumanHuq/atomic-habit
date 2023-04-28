@@ -13,13 +13,7 @@ export default function App() {
 				<Divider style={{ marginVertical: 5 }} />
 				{searchTerm.length === 0 && <Text>Insert some food name to display nutrition information</Text>}
 				{searchTerm.length === 0 && isLoading && <Text>Loading</Text>}
-				{data?.flatMap((item) =>
-					Object.entries(item).map(([key, val]) => (
-						<Text key={key}>
-							{key}: {val}
-						</Text>
-					))
-				)}
+				<Text>{JSON.stringify(data, null, 2)}</Text>
 			</>
 		</Layout>
 	);

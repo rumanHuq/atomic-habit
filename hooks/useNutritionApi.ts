@@ -1,46 +1,56 @@
 import { NUTRITION_API_KEY } from "@env";
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { useDebounce } from "use-debounce";
 
-interface NutritionApiResolved {
-	name: string;
-	calories: number;
-	serving_size_g: number;
-	fat_total_g: number;
-	fat_saturated_g: number;
-	protein_g: number;
-	sodium_mg: number;
-	potassium_mg: number;
-	cholesterol_mg: number;
-	carbohydrates_total_g: number;
-	fiber_g: number;
-	sugar_g: number;
+import { NutritionData } from "@/@types/@types";
+import mockData from "@/NutritionData.json";
+import { readFile, writeFile } from "@/utils/fileSystem";
+
+function newAbortSignal(timeoutMs: number) {
+	const abortController = new AbortController();
+	setTimeout(() => abortController.abort(), timeoutMs);
+
+	return abortController.signal;
 }
 
-export function useNutritionApi(searchTerm: string) {
-	const query = searchTerm.toLowerCase();
-	return useQuery<NutritionApiResolved[]>(
+const environment = process.env;
+
+export function useNutritionApi(searchTerm = "") {
+	const [query] = useDebounce(searchTerm.toLowerCase().trim(), 1000);
+	/**
+	 * 1. create a file which stores all the calories in json
+	 * 2. first check if food info exists in the calories file
+	 * 3. if exists return, otherwise do a fetch call
+	 */
+	return useQuery<NutritionData[]>(
 		["nutrition", query],
 		async () => {
-			const controller = new AbortController();
-			const { signal } = controller;
-			const promise = new Promise((resolve) => {
-				setTimeout(resolve, 1000);
-			}).then(() =>
-				fetch(`https://api.api-ninjas.com/v1/nutrition?query=${query}`, {
-					method: "GET",
-					headers: { "X-Api-Key": NUTRITION_API_KEY },
-					// @ts-expect-error
-					contentType: "application/json",
-					signal,
-				}).then((d) => d.json())
-			);
-			// @ts-expect-error
-			promise.cancel = () => {
-				controller.abort();
-			};
+			const file = await readFile();
+			if (file[query]) {
+				console.log("found in file system");
+				return file[query];
+			}
 
-			return promise;
+			if (environment.NODE_ENV === "development") {
+				console.log("loading from mock data");
+				const data = mockData[query] ?? [];
+				await writeFile({ [query]: data });
+				return data;
+			}
+
+			const { data } = await axios.get(`https://api.api-ninjas.com/v1/nutrition?query=${query}`, {
+				headers: { "X-Api-Key": NUTRITION_API_KEY },
+				// @ts-expect-error
+				contentType: "application/json",
+				signal: newAbortSignal(1000),
+			});
+			await writeFile({ [query]: data });
+			return data;
 		},
-		{ enabled: searchTerm?.length > 0 }
+		{
+			enabled: query?.length > 0,
+			retry: false,
+		}
 	);
 }
