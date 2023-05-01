@@ -12,3 +12,18 @@ export interface NutritionData {
 	fiber_g: number;
 	sugar_g: number;
 }
+
+export interface Calorie {
+	food: string;
+	calorie: number;
+}
+export interface Exercise {
+	name: string;
+	weight: number;
+}
+export interface DailyRecords {
+	[date: string]: {
+		calories: Calorie[];
+		exercises: Exercise[];
+	};
+}

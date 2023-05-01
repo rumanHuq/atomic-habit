@@ -1,20 +1,14 @@
-import { Layout, Text, Input, Divider } from "@ui-kitten/components";
-import { useState } from "react";
+import { Text } from "@ui-kitten/components";
 
-import { useNutritionApi } from "@/hooks/useNutritionApi";
+import { Container } from "@/components/Container";
+import { TabScreen } from "@/components/TabScreen";
 
 export default function App() {
-	const [searchTerm, setSearchTerm] = useState("");
-	const { data, isLoading } = useNutritionApi(searchTerm);
 	return (
-		<Layout>
-			<>
-				<Input placeholder="Place your Text" value={searchTerm} onChangeText={(nextValue) => setSearchTerm(nextValue)} />
-				<Divider style={{ marginVertical: 5 }} />
-				{searchTerm.length === 0 && <Text>Insert some food name to display nutrition information</Text>}
-				{searchTerm.length === 0 && isLoading && <Text>Loading</Text>}
-				<Text>{JSON.stringify(data, null, 2)}</Text>
-			</>
-		</Layout>
+		<Container>
+			<Text>History of food consumption and Exercise information are shown here.</Text>
+			<Text>UI would be a card, with date and all the data as facebook timeline</Text>
+			<TabScreen {...{ title: "Home", iconName: "home" }} />
+		</Container>
 	);
 }
