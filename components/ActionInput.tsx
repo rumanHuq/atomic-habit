@@ -5,6 +5,15 @@ import { ImageProps, TextStyle, ViewStyle, View, TouchableWithoutFeedback } from
 
 import { useStore } from "@/hooks/useStore";
 
+interface ActionInputProps {
+	onSetItem: (val: { textValue: string; numberValue: number }) => void;
+	textPlaceHolder: string;
+	numberPlaceHolder: string;
+	autoCompleteListFromGivenKeywordFn: (keyword: string) => string[];
+	resultValueFn: (val: { textValue: string; numberValue: number }) => number;
+	resultPlaceHolderSuffix: string;
+}
+
 function AddIcon({ style }: { style: { height: number; marginHorizontal: number; tintColor: string; width: number } }) {
 	const iconStyle: TextStyle = omit(style, "tintColor");
 	iconStyle.color = style.tintColor;
@@ -21,33 +30,39 @@ function RemoveIcon({ onPress, ...imageProps }: Partial<ImageProps> & { onPress:
 	);
 }
 
-interface ActionInputProps {
-	onSetItem: (val: { textValue: string; numberValue: number }) => void;
-	textPlaceHolder: string;
-	numberPlaceHolder: string;
-	autoCompleteListFromGivenKeywordFn: (keyword: string) => string[];
-	resultValue: string;
-}
-
 export function ActionInput(props: ActionInputProps) {
 	const theme = useTheme();
-	const { onSetItem, textPlaceHolder, numberPlaceHolder, autoCompleteListFromGivenKeywordFn, resultValue } = props;
+	const {
+		onSetItem,
+		textPlaceHolder,
+		numberPlaceHolder,
+		autoCompleteListFromGivenKeywordFn,
+		resultValueFn,
+		resultPlaceHolderSuffix,
+	} = props;
 	const [textValue, setTextValue] = useState("");
 	const [numberValue, setNumberValue] = useState(-1);
 	const dropdownVisible = useStore((state) => state.dropdownVisible);
 	const setDropdownVisible = useStore((state) => state.setDropdownVisible);
-	const disabled = !textValue || numberValue <= 0;
-	const onPressAddButton = () => {
-		onSetItem({ textValue, numberValue });
+	const restInputs = () => {
 		setNumberValue(-1);
 		setTextValue("");
+		setDropdownVisible(false);
+	};
+	const onPressAddButton = () => {
+		onSetItem({ textValue, numberValue });
+		restInputs();
 	};
 	const data = autoCompleteListFromGivenKeywordFn(textValue);
-
+	let resultValue: number | string = resultValueFn({ numberValue, textValue });
+	resultValue = resultValue > 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
+	const invalidTextValue = data.includes(textValue) === false;
+	const disabled = invalidTextValue || numberValue <= 0;
 	return (
 		<View style={[styles]}>
 			<View style={{ flex: 1 }}>
 				<Input
+					onBlur={() => setDropdownVisible(false)}
 					placeholder={textPlaceHolder ?? "provide value"}
 					size="small"
 					keyboardType="web-search"
@@ -55,7 +70,6 @@ export function ActionInput(props: ActionInputProps) {
 						setTextValue(txt);
 						setDropdownVisible(txt.length > 2);
 					}}
-					onBlur={() => setDropdownVisible(false)}
 					value={textValue}
 					accessoryRight={(imageProps) => RemoveIcon({ ...imageProps, onPress: () => setTextValue("") })}
 				/>
@@ -86,7 +100,9 @@ export function ActionInput(props: ActionInputProps) {
 				)}
 			</View>
 			<Input
-				style={{ width: 100 }}
+				onBlur={() => setDropdownVisible(false)}
+				disabled={invalidTextValue}
+				style={{ flex: 0.45 }}
 				placeholder={numberPlaceHolder ?? "provide value"}
 				size="small"
 				value={`${numberValue < 0 ? "" : numberValue}`}
@@ -97,6 +113,7 @@ export function ActionInput(props: ActionInputProps) {
 				}}
 			/>
 			<Input
+				style={{ flex: 0.55 }}
 				onPressIn={() => setDropdownVisible(false)}
 				size="small"
 				value={resultValue}

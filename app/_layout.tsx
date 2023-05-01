@@ -8,6 +8,7 @@ import { Tabs } from "expo-router";
 import { useEffect } from "react";
 import { useColorScheme, AppState, Platform } from "react-native";
 import type { AppStateStatus } from "react-native";
+import { MenuProvider } from "react-native-popup-menu";
 
 import { FeatherIconsPack } from "@/lib/iconPack";
 import { appTheme } from "@/theme";
@@ -59,13 +60,15 @@ export default function Layout() {
 		<PersistQueryClientProvider client={queryClient} persistOptions={{ persister: asyncStoragePersister }}>
 			<IconRegistry icons={FeatherIconsPack} />
 			<ApplicationProvider {...eva} theme={theme}>
-				<Tabs
-					screenOptions={{
-						headerStyle: { backgroundColor: styles.backgroundColor },
-						headerTitleStyle: { color: styles.color },
-						tabBarStyle: { backgroundColor: styles.backgroundColor, paddingTop: 8 },
-					}}
-				/>
+				<MenuProvider>
+					<Tabs
+						screenOptions={{
+							headerStyle: { backgroundColor: styles.backgroundColor },
+							headerTitleStyle: { color: styles.color },
+							tabBarStyle: { backgroundColor: styles.backgroundColor, paddingTop: 8 },
+						}}
+					/>
+				</MenuProvider>
 			</ApplicationProvider>
 		</PersistQueryClientProvider>
 	);

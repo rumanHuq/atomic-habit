@@ -1,38 +1,15 @@
-import { ListItem } from "@ui-kitten/components";
-import { uniq } from "lodash";
+import { Layout, ListItem, Text } from "@ui-kitten/components";
 import { useEffect } from "react";
+import { Menu, MenuOption, MenuOptions, MenuTrigger } from "react-native-popup-menu";
 
-import caloriesDb from "@/calories_db.json";
 import { ActionInput } from "@/components/ActionInput";
-import { ActionableList } from "@/components/ActionableList";
 import { Container } from "@/components/Container";
+import { DataGrid } from "@/components/DataGrid";
 import { TabScreen } from "@/components/TabScreen";
 import { useStore } from "@/hooks/useStore";
-
-function getDateToday() {
-	const today = new Date();
-	const date = today.getDate();
-	const month = today.getMonth() + 1;
-	const year = today.getFullYear();
-
-	return `${year}-${month}-${date}`;
-}
-
-function foodFilterFunction(keyword: string) {
-	if (keyword.length < 3) return [];
-	return uniq(
-		caloriesDb
-			.filter(
-				(item) =>
-					item.group.toLowerCase().startsWith(keyword.toLowerCase()) ||
-					item.name.toLowerCase().startsWith(keyword.toLowerCase()) ||
-					item.group.toLowerCase().includes(keyword.toLowerCase()) ||
-					item.name.toLowerCase().includes(keyword.toLowerCase())
-			)
-			.map((i) => i.name)
-			.sort()
-	);
-}
+import { foodFilterFunction } from "@/utils/foodFilterFunction";
+import { getCalorieInfo } from "@/utils/getCalorieInfo";
+import { getDateToday } from "@/utils/getDateToday";
 
 export default function DetailsScreen() {
 	const today = getDateToday();
@@ -40,46 +17,65 @@ export default function DetailsScreen() {
 	const setInitialDataOfTheDay = useStore((state) => state.setInitialDataOfTheDay);
 	const setCalorieOfTheDay = useStore((state) => state.setCalorieOfTheDay);
 	const setExerciseOfTheDay = useStore((state) => state.setExerciseOfTheDay);
-
+	const caloriesHistory = todayRecords?.calories ?? [];
 	useEffect(() => {
-		if (!todayRecords) {
-			setInitialDataOfTheDay(today);
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+		setInitialDataOfTheDay(today);
+	}, [setInitialDataOfTheDay, today]);
 
 	return (
 		<Container>
-			<ActionableList
-				header="Food Consumption"
-				data={todayRecords?.calories ?? []}
-				renderItem={({ item }) => <ListItem title={item.food} onPress={() => console.log(today, item)} />}
+			<DataGrid
+				tableHeaders={["Food", "Calories"]}
+				tableFooters={["Total", todayRecords.calories.reduce((acc, { calorie }) => acc + calorie, 0).toFixed(0)]}
+				title="Food Consumption"
+				data={caloriesHistory}
+				renderItem={({ item, index }) => (
+					<Menu>
+						<MenuTrigger triggerOnLongPress customStyles={{ triggerTouchable: { activeOpacity: 0.3 } }}>
+							<Layout style={{ flexDirection: "row", alignItems: "center", height: 50 }} level="2">
+								<Text style={{ flex: 1, textAlign: "center" }}>{item.food}</Text>
+								<Text style={{ flex: 1, textAlign: "center" }}>{item.calorie.toFixed(0)}</Text>
+							</Layout>
+						</MenuTrigger>
+						<MenuOptions optionsContainerStyle={{ width: "70%", marginLeft: 50 }}>
+							<MenuOption onSelect={() => alert(`Save`)} text="Edit" />
+							<MenuOption onSelect={() => alert(`Not called`)} text="delete" />
+						</MenuOptions>
+					</Menu>
+				)}
 				autoSuggestionPlaceholder={
 					<ActionInput
-						resultValue="n/a"
+						resultValueFn={getCalorieInfo}
+						resultPlaceHolderSuffix="cal"
 						textPlaceHolder="What did you eat"
-						numberPlaceHolder="gram"
-						onSetItem={console.log}
-						autoCompleteListFromGivenKeywordFn={foodFilterFunction}
+						numberPlaceHolder="g/ml"
+						onSetItem={(val) => {
+							const calorie = getCalorieInfo(val);
+							if (!calorie) return;
+							setCalorieOfTheDay(today, { food: val.textValue, calorie });
+						}}
+						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, todayRecords.calories)}
 					/>
 				}
 			/>
-
-			<ActionableList
-				header="Exercises!"
+			<DataGrid
+				title="Exercises!"
+				tableHeaders={["Exercise", "Weight"]}
+				tableFooters={[]}
 				data={todayRecords?.exercises ?? []}
 				renderItem={({ item }) => <ListItem title={item.name} onPress={() => console.log(today, item)} />}
 				autoSuggestionPlaceholder={
 					<ActionInput
-						resultValue="n/a"
-						textPlaceHolder="What exercise did you do?"
+						resultValueFn={getCalorieInfo}
+						resultPlaceHolderSuffix="%"
+						textPlaceHolder="Pump it!"
 						numberPlaceHolder="kg"
 						onSetItem={console.log}
 						autoCompleteListFromGivenKeywordFn={() => []}
 					/>
 				}
 			/>
-			<TabScreen {...{ title: "What's up!", iconName: "plus" }} />
+			<TabScreen {...{ title: "What's up!", iconName: "calendar" }} />
 		</Container>
 	);
 }

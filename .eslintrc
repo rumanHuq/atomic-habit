@@ -27,6 +27,7 @@
     }
   ],
   "rules": {
+    "react/no-array-index-key": 0,
     "react/jsx-props-no-spreading": 0,
     "import/extensions": 0,
     "import/no-unresolved": 0,

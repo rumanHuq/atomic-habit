@@ -14,3 +14,25 @@
   - gram slider to adjust actual calories
   - pull calorie info from API
 
+
+# 02-05-2023
+- long press edit entry with [popup](https://www.npmjs.com/package/react-native-popup-menu)
+- exercise lists in json file
+
+# 03-05-2023
+- Exercise feature work
+
+# 04-05-2023
+- Exercise feature work
+
+# 05-05-2023
+- Main page feed planning
+  - Feed visibility private/public/friends(not MVP)
+  - Add comments to feed(not MVP)
+- check meetup app, probably same kinds of feed
+
+# 06-05-2023
+- Main page feature implementation
+
+# 07-05-2023
+- Main page feature implementation

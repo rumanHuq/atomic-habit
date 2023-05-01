@@ -12,3 +12,4 @@ url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
 headers: { 'X-Api-Key': NUTRITION_API_KEY},
 contentType: 'application/json'
 ```
+- [PEXEL](https://www.pexels.com/api/documentation/#photos-search)
