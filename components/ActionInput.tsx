@@ -55,10 +55,10 @@ export function ActionInput(props: ActionInputProps) {
 		onSetItem({ textValue, numberValue });
 		restInputs();
 	};
-	const data = autoCompleteListFromGivenKeywordFn(textValue);
+	const autoCompleteList = autoCompleteListFromGivenKeywordFn(textValue);
 	let resultValue: number | string = resultValueFn({ numberValue, textValue });
 	resultValue = resultValue > 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
-	const invalidTextValue = data.includes(textValue) === false;
+	const invalidTextValue = autoCompleteList.includes(textValue) === false;
 	const disabled = invalidTextValue || numberValue <= 0;
 	const hideAutoSuggestion = () => {
 		setAllDropdownVisible(false);
@@ -68,7 +68,8 @@ export function ActionInput(props: ActionInputProps) {
 		<View style={[styles]}>
 			<View style={{ flex: 1 }}>
 				<Input
-					onBlur={hideAutoSuggestion}
+					focusable={autoCompleteList.length > 0}
+					onFocus={hideAutoSuggestion}
 					placeholder={textPlaceHolder ?? "provide value"}
 					size="small"
 					keyboardType="web-search"
@@ -80,7 +81,7 @@ export function ActionInput(props: ActionInputProps) {
 					value={textValue}
 					accessoryRight={(imageProps) => RemoveIcon({ ...imageProps, onPress: () => setTextValue("") })}
 				/>
-				{textValue && localDropdownVisible && allDropdownVisible && data.length > 0 && (
+				{textValue && localDropdownVisible && allDropdownVisible && autoCompleteList.length > 0 && (
 					<List
 						style={{
 							borderWidth: 1,
@@ -93,7 +94,7 @@ export function ActionInput(props: ActionInputProps) {
 							left: 0,
 							zIndex: 1,
 						}}
-						data={data}
+						data={autoCompleteList}
 						renderItem={({ item }) => (
 							<ListItem
 								title={item}
@@ -107,7 +108,7 @@ export function ActionInput(props: ActionInputProps) {
 				)}
 			</View>
 			<Input
-				onBlur={hideAutoSuggestion}
+				onFocus={hideAutoSuggestion}
 				disabled={invalidTextValue}
 				style={{ flex: 0.45 }}
 				placeholder={numberPlaceHolder ?? "provide value"}
