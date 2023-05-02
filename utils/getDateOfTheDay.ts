@@ -1,4 +1,4 @@
-export function getDateToday() {
+export function getDateOfTheDay() {
 	const today = new Date();
 	const date = today.getDate();
 	const month = today.getMonth() + 1;

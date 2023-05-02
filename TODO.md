@@ -19,7 +19,7 @@
 - exercise lists in json file
 
 # 03-05-2023
-- Exercise feature work
+- Background task day change
 
 # 04-05-2023
 - Exercise feature work

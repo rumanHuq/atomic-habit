@@ -12,7 +12,6 @@ export function foodFilterFunction(word: string, foodHistories: FoodHistory[]) {
 			.filter(
 				(item) =>
 					item.group.toLowerCase().startsWith(keyword.toLowerCase()) ||
-					item.group.toLowerCase().includes(keyword.toLowerCase()) ||
 					item.name.toLowerCase().startsWith(keyword.toLowerCase()) ||
 					item.name.toLowerCase().includes(keyword.toLowerCase())
 			)

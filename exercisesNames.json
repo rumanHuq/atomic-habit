@@ -1,0 +1,890 @@
+{
+  "abs": [
+    {
+      "href": "https://www.strengthlog.com/cable-crunch/",
+      "name": "Cable Crunch"
+    },
+    {
+      "href": "https://www.strengthlog.com/crunch/",
+      "name": "Crunch"
+    },
+    {
+      "href": "https://www.strengthlog.com/dead-bugs/",
+      "name": "Dead Bug"
+    },
+    {
+      "href": "https://www.strengthlog.com/hanging-leg-raise/",
+      "name": "Hanging Leg Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/hanging-knee-raise/",
+      "name": "Hanging Knee Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/hanging-sit-up/",
+      "name": "Hanging Sit-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/high-to-low-wood-chop-with-band/",
+      "name": "High to Low Wood Chop with Band"
+    },
+    {
+      "href": "https://www.strengthlog.com/horizontal-wood-chop-with-band/",
+      "name": "Horizontal Wood Chop with Band"
+    },
+    {
+      "href": "https://www.strengthlog.com/kneeling-ab-wheel-roll-out/",
+      "name": "Kneeling Ab Wheel Roll-Out"
+    },
+    {
+      "href": "https://www.strengthlog.com/kneeling-plank",
+      "name": "Kneeling Plank"
+    },
+    {
+      "href": "https://www.strengthlog.com/kneeling-side-plank/",
+      "name": "Kneeling Side Plank"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-leg-raise/",
+      "name": "Lying Leg Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-windshield-wiper/",
+      "name": "Lying Windshield Wiper"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-windshield-wiper-with-bent-knees/",
+      "name": "Lying Windshield Wiper with Bent Knees"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-crunch/",
+      "name": "Machine Crunch"
+    },
+    {
+      "href": "https://www.strengthlog.com/mountain-climbers/",
+      "name": "Mountain Climbers"
+    },
+    {
+      "href": "https://www.strengthlog.com/oblique-crunch/",
+      "name": "Oblique Crunch"
+    },
+    {
+      "href": "https://www.strengthlog.com/oblique-sit-up/",
+      "name": "Oblique Sit-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/plank/",
+      "name": "Plank"
+    },
+    {
+      "href": "https://www.strengthlog.com/side-plank/",
+      "name": "Side Plank"
+    },
+    {
+      "href": "https://www.strengthlog.com/sit-up/",
+      "name": "Sit-Up"
+    }
+  ],
+  "back": [
+    {
+      "href": "https://www.strengthlog.com/back-extension/",
+      "name": "Back Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-row/",
+      "name": "Barbell Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-shrug/",
+      "name": "Barbell Shrug"
+    },
+    {
+      "href": "https://www.strengthlog.com/block-snatch/",
+      "name": "Block Snatch"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-close-grip-seated-row/",
+      "name": "Cable Close Grip Seated Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-wide-grip-seated-row/",
+      "name": "Cable Wide Grip Seated Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/chin-up/",
+      "name": "Chin-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/clean/",
+      "name": "Clean"
+    },
+    {
+      "href": "https://www.strengthlog.com/clean-and-jerk/",
+      "name": "Clean and Jerk"
+    },
+    {
+      "href": "https://www.strengthlog.com/deadlift/",
+      "name": "Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/deficit-deadlift/",
+      "name": "Deficit Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-deadlift/",
+      "name": "Dumbbell Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-row/",
+      "name": "Dumbbell Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-shrug/",
+      "name": "Dumbbell Shrug"
+    },
+    {
+      "href": "https://www.strengthlog.com/floor-back-extension/",
+      "name": "Floor Back Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/good-morning/",
+      "name": "Good Morning"
+    },
+    {
+      "href": "https://www.strengthlog.com/hang-clean/",
+      "name": "Hang Clean"
+    },
+    {
+      "href": "https://www.strengthlog.com/hang-power-clean/",
+      "name": "Hang Power Clean"
+    },
+    {
+      "href": "https://www.strengthlog.com/hang-power-snatch/",
+      "name": "Hang Power Snatch"
+    },
+    {
+      "href": "https://www.strengthlog.com/hang-snatch/",
+      "name": "Hang Snatch"
+    },
+    {
+      "href": "https://www.strengthlog.com/inverted-row/",
+      "name": "Inverted Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/inverted-row-with-underhand-grip/",
+      "name": "Inverted Row with Underhand Grip"
+    },
+    {
+      "href": "https://www.strengthlog.com/kettlebell-swing/",
+      "name": "Kettlebell Swing"
+    },
+    {
+      "href": "https://www.strengthlog.com/lat-pulldown-with-pronated-grip/",
+      "name": "Lat Pulldown With Pronated Grip"
+    },
+    {
+      "href": "https://www.strengthlog.com/lat-pulldown-with-supinated-grip/",
+      "name": "Lat Pulldown With Supinated Grip"
+    },
+    {
+      "href": "https://www.strengthlog.com/one-handed-cable-row/",
+      "name": "One-Handed Cable Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/one-handed-lat-pulldown/",
+      "name": "One-Handed Lat Pulldown"
+    },
+    {
+      "href": "https://www.strengthlog.com/pause-deadlift/",
+      "name": "Pause Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/pendlay-row/",
+      "name": "Pendlay Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/power-clean/",
+      "name": "Power Clean"
+    },
+    {
+      "href": "https://www.strengthlog.com/power-snatch/",
+      "name": "Power Snatch"
+    },
+    {
+      "href": "https://www.strengthlog.com/pull-up/",
+      "name": "Pull-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/rack-pull/",
+      "name": "Rack Pull"
+    },
+    {
+      "href": "https://www.strengthlog.com/seal-row/",
+      "name": "Seal Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-machine-row/",
+      "name": "Seated Machine Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/snatch/",
+      "name": "Snatch"
+    },
+    {
+      "href": "https://www.strengthlog.com/snatch-grip-deadlift/",
+      "name": "Snatch Grip Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/stiff-legged-deadlift/",
+      "name": "Stiff-Legged Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/straight-arm-lat-pulldown/",
+      "name": "Straight Arm Lat Pulldown"
+    },
+    {
+      "href": "https://www.strengthlog.com/sumo-deadlift/",
+      "name": "Sumo Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/t-bar-row/",
+      "name": "T-Bar Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/trap-bar-deadlift-with-high-handles/",
+      "name": "Trap Bar Deadlift With High Handles"
+    },
+    {
+      "href": "https://www.strengthlog.com/trap-bar-deadlift-with-low-handles/",
+      "name": "Trap Bar Deadlift With Low Handles"
+    }
+  ],
+  "biceps": [
+    {
+      "href": "https://www.strengthlog.com/barbell-curl/",
+      "name": "Barbell Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-preacher-curl/",
+      "name": "Barbell Preacher Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/bodyweight-curl/",
+      "name": "Bodyweight Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-curl-with-bar/",
+      "name": "Cable Curl With Bar"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-curl-with-rope/",
+      "name": "Cable Curl With Rope"
+    },
+    {
+      "href": "https://www.strengthlog.com/concentration-curl/",
+      "name": "Concentration Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-curl/",
+      "name": "Dumbbell Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-preacher-curl/",
+      "name": "Dumbbell Preacher Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/hammer-curl/",
+      "name": "Hammer Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/incline-dumbbell-curl/",
+      "name": "Incline Dumbbell Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-bicep-curl/",
+      "name": "Machine Bicep Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/spider-curl/",
+      "name": "Spider Curl"
+    }
+  ],
+  "calves": [
+    {
+      "href": "https://www.strengthlog.com/eccentric-heel-drop/",
+      "name": "Eccentric Heel Drop"
+    },
+    {
+      "href": "https://www.strengthlog.com/heel-raise/",
+      "name": "Heel Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-calf-raise/",
+      "name": "Seated Calf Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/standing-calf-raise/",
+      "name": "Standing Calf Raise"
+    }
+  ],
+  "chest": [
+    {
+      "href": "https://www.strengthlog.com/bar-dip/",
+      "name": "Bar Dip"
+    },
+    {
+      "href": "https://www.strengthlog.com/bench-press/",
+      "name": "Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-chest-press/",
+      "name": "Cable Chest Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/close-grip-bench-press/",
+      "name": "Close-Grip Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/close-grip-feet-up-bench-press/",
+      "name": "Close-Grip Feet-Up Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/decline-bench-press/",
+      "name": "Decline Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-chest-fly/",
+      "name": "Dumbbell Chest Fly"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-chest-press/",
+      "name": "Dumbbell Chest Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-decline-chest-press/",
+      "name": "Dumbbell Decline Chest Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-floor-press/",
+      "name": "Dumbbell Floor Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-pullover/",
+      "name": "Dumbbell Pullover"
+    },
+    {
+      "href": "https://www.strengthlog.com/feet-up-bench-press/",
+      "name": "Feet-Up Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/floor-press/",
+      "name": "Floor Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/incline-bench-press/",
+      "name": "Incline Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-incline-press/",
+      "name": "Incline Dumbbell Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/incline-push-up/",
+      "name": "Incline Push-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/kneeling-incline-push-up/",
+      "name": "Kneeling Incline Push-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/kneeling-push-up/",
+      "name": "Kneeling Push-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-chest-fly/",
+      "name": "Machine Chest Fly"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-chest-press/",
+      "name": "Machine Chest Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/pec-deck/",
+      "name": "Pec Deck"
+    },
+    {
+      "href": "https://www.strengthlog.com/push-up/",
+      "name": "Push-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/push-up-against-wall/",
+      "name": "Push-Up Against Wall"
+    },
+    {
+      "href": "https://www.strengthlog.com/push-ups-with-feet-in-rings/",
+      "name": "Push-Ups With Feet in Rings"
+    },
+    {
+      "href": "https://www.strengthlog.com/resistance-band-chest-fly/",
+      "name": "Resistance Band Chest Fly"
+    },
+    {
+      "href": "https://www.strengthlog.com/smith-machine-bench-press/",
+      "name": "Smith Machine Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/smith-machine-incline-bench-press/",
+      "name": "Smith Machine Incline Bench Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/standing-cable-chest-fly/",
+      "name": "Standing Cable Chest Fly"
+    },
+    {
+      "href": "https://www.strengthlog.com/standing-resistance-band-chest-fly/",
+      "name": "Standing Resistance Band Chest Fly"
+    }
+  ],
+  "forearm": [
+    {
+      "href": "https://www.strengthlog.com/barbell-wrist-curl/",
+      "name": "Barbell Wrist Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-wrist-curl-behind-the-back/",
+      "name": "Barbell Wrist Curl Behind the Back"
+    },
+    {
+      "href": "https://www.strengthlog.com/bar-hang/",
+      "name": "Bar Hang"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-wrist-curl/",
+      "name": "Dumbbell Wrist Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/farmers-walk/",
+      "name": "Farmers Walk"
+    },
+    {
+      "href": "https://www.strengthlog.com/fat-bar-deadlift/",
+      "name": "Fat Bar Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/gripper/",
+      "name": "Gripper"
+    },
+    {
+      "href": "https://www.strengthlog.com/one-handed-bar-hang/",
+      "name": "One-Handed Bar Hang"
+    },
+    {
+      "href": "https://www.strengthlog.com/plate-pinch/",
+      "name": "Plate Pinch"
+    },
+    {
+      "href": "https://www.strengthlog.com/plate-wrist-curl/",
+      "name": "Plate Wrist Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/towel-pull-up/",
+      "name": "Towel Pull-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-wrist-extension/",
+      "name": "Barbell Wrist Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-wrist-extension/",
+      "name": "Dumbbell Wrist Extension"
+    }
+  ],
+  "glutes": [
+    {
+      "href": "https://www.strengthlog.com/banded-side-kick/",
+      "name": "Banded Side Kicks"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-pull-through/",
+      "name": "Cable Pull Through"
+    },
+    {
+      "href": "https://www.strengthlog.com/clamshells/",
+      "name": "Clamshells"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-romanian-deadlift/",
+      "name": "Dumbbell Romanian Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-frog-pumps/",
+      "name": "Dumbbell Frog Pumps"
+    },
+    {
+      "href": "https://www.strengthlog.com/fire-hydrants/",
+      "name": "Fire Hydrants"
+    },
+    {
+      "href": "https://www.strengthlog.com/frog-pumps/",
+      "name": "Frog Pumps"
+    },
+    {
+      "href": "https://www.strengthlog.com/glute-bridge/",
+      "name": "Glute Bridge"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-abduction-against-band/",
+      "name": "Hip Abduction Against Band"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-abduction-machine/",
+      "name": "Hip Abduction Machine"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-thrust/",
+      "name": "Hip Thrust"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-thrust-machine/",
+      "name": "Hip Thrust Machine"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-thrust-with-band-around-knees/",
+      "name": "Hip Thrust With Band Around Knees"
+    },
+    {
+      "href": "https://www.strengthlog.com/lateral-walk-with-band/",
+      "name": "Lateral Walk With Band"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-glute-kickbacks/",
+      "name": "Machine Glute Kickbacks"
+    },
+    {
+      "href": "https://www.strengthlog.com/one-legged-glute-bridge/",
+      "name": "One-Legged Glute Bridge"
+    },
+    {
+      "href": "https://www.strengthlog.com/one-legged-hip-thrust/",
+      "name": "One-Legged Hip Thrust"
+    },
+    {
+      "href": "https://www.strengthlog.com/romanian-deadlift/",
+      "name": "Romanian Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/single-leg-romanian-deadlift/",
+      "name": "Single Leg Romanian Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/standing-glute-kickback-in-machine/",
+      "name": "Standing Glute Kickback in Machine"
+    },
+    {
+      "href": "https://www.strengthlog.com/step-up/",
+      "name": "Step Up"
+    }
+  ],
+  "legs": [
+    {
+      "href": "https://www.strengthlog.com/air-squat/",
+      "name": "Air Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-hack-squat/",
+      "name": "Barbell Hack Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-lunge/",
+      "name": "Barbell Lunge"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-walking-lunges/",
+      "name": "Barbell Walking Lunge"
+    },
+    {
+      "href": "https://www.strengthlog.com/belt-squats/",
+      "name": "Belt Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/body-weight-lunge/",
+      "name": "Body Weight Lunge"
+    },
+    {
+      "href": "https://www.strengthlog.com/box-squat/",
+      "name": "Box Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/bulgarian-split-squat/",
+      "name": "Bulgarian Split Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/chair-squats/",
+      "name": "Chair Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-lunge/",
+      "name": "Dumbbell Lunge"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-squat/",
+      "name": "Dumbbell Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/front-squat/",
+      "name": "Front Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/goblet-squat/",
+      "name": "Goblet Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/hack-squat-machine/",
+      "name": "Hack Squat Machine"
+    },
+    {
+      "href": "https://www.strengthlog.com/half-body-weight-squats/",
+      "name": "Half Air Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/hip-adduction-machine/",
+      "name": "Hip Adduction Machine"
+    },
+    {
+      "href": "https://www.strengthlog.com/landmine-hack-squat/",
+      "name": "Landmine Hack Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/landmine-squat/",
+      "name": "Landmine Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/leg-extension/",
+      "name": "Leg Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/leg-press/",
+      "name": "Leg Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-leg-curl/",
+      "name": "Lying Leg Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/pause-squat/",
+      "name": "Pause Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/romanian-deadlift/",
+      "name": "Romanian Deadlift"
+    },
+    {
+      "href": "https://www.strengthlog.com/safety-bar-squat/",
+      "name": "Safety Bar Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-leg-curl/",
+      "name": "Seated Leg Curl"
+    },
+    {
+      "href": "https://www.strengthlog.com/shallow-lunges-bodyweight/",
+      "name": "Shallow Body Weight Lunge"
+    },
+    {
+      "href": "https://www.strengthlog.com/side-lunges-bodyweight/",
+      "name": "Side Lunges (Bodyweight)"
+    },
+    {
+      "href": "https://www.strengthlog.com/smith-machine-squat/",
+      "name": "Smith Machine Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/squat/",
+      "name": "Squat"
+    },
+    {
+      "href": "https://www.strengthlog.com/step-up/",
+      "name": "Step Up"
+    }
+  ],
+  "shoulder": [
+    {
+      "href": "https://www.strengthlog.com/band-external-shoulder-rotation/",
+      "name": "Band External Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/band-internal-shoulder-rotation/",
+      "name": "Band Internal Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/band-pull-apart/",
+      "name": "Band Pull-Apart"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-front-raise/",
+      "name": "Barbell Front Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-rear-delt-row/",
+      "name": "Barbell Rear Delt Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-upright-row/",
+      "name": "Barbell Upright Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/behind-the-neck-press/",
+      "name": "Behind the Neck Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-lateral-raise/",
+      "name": "Cable Lateral Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/cable-rear-delt-row/",
+      "name": "Cable Rear Delt Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-front-raise/",
+      "name": "Dumbbell Front Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-horizontal-internal-shoulder-rotation/",
+      "name": "Dumbbell Horizontal Internal Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-horizontal-external-shoulder-rotation/",
+      "name": "Dumbbell Horizontal External Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-lateral-raise/",
+      "name": "Dumbbell Lateral Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-rear-delt-row/",
+      "name": "Dumbbell Rear Delt Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-shoulder-press/",
+      "name": "Dumbbell Shoulder Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/face-pull/",
+      "name": "Face Pull"
+    },
+    {
+      "href": "https://www.strengthlog.com/front-hold/",
+      "name": "Front Hold"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-dumbbell-external-shoulder-rotation/",
+      "name": "Lying Dumbbell External Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/lying-dumbbell-internal-shoulder-rotation/",
+      "name": "Lying Dumbbell Internal Shoulder Rotation"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-lateral-raise/",
+      "name": "Machine Lateral Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/machine-shoulder-press/",
+      "name": "Machine Shoulder Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/monkey-row/",
+      "name": "Monkey Row"
+    },
+    {
+      "href": "https://www.strengthlog.com/overhead-press/",
+      "name": "Overhead Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/plate-front-raise/",
+      "name": "Plate Front Raise"
+    },
+    {
+      "href": "https://www.strengthlog.com/power-jerk/",
+      "name": "Power Jerk"
+    },
+    {
+      "href": "https://www.strengthlog.com/push-press/",
+      "name": "Push Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/reverse-dumbbell-flyes/",
+      "name": "Reverse Dumbbell Flyes"
+    },
+    {
+      "href": "https://www.strengthlog.com/reverse-machine-fly/",
+      "name": "Reverse Machine Fly"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
+      "name": "Seated Dumbbell Shoulder Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-barbell-overhead-press/",
+      "name": "Seated Barbell Overhead Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/seated-smith-machine-shoulder-press/",
+      "name": "Seated Smith Machine Shoulder Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/snatch-grip-behind-the-neck-press/",
+      "name": "Snatch Grip Behind the Neck Press"
+    },
+    {
+      "href": "https://www.strengthlog.com/squat-jerk/",
+      "name": "Squat Jerk"
+    },
+    {
+      "href": "https://www.strengthlog.com/split-jerk/",
+      "name": "Split Jerk"
+    }
+  ],
+  "triceps": [
+    {
+      "href": "https://www.strengthlog.com/barbell-standing-triceps-extension/",
+      "name": "Barbell Standing Triceps Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/barbell-lying-triceps-extension/",
+      "name": "Barbell Lying Triceps Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/bench-dip/",
+      "name": "Bench Dip"
+    },
+    {
+      "href": "https://www.strengthlog.com/close-grip-push-up/",
+      "name": "Close-Grip Push-Up"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-lying-triceps-extension-2/",
+      "name": "Dumbbell Lying Triceps Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/dumbbell-standing-triceps-extension/",
+      "name": "Dumbbell Standing Triceps Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/overhead-cable-triceps-extension/",
+      "name": "Overhead Cable Triceps Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/triceps-bodyweight-extension/",
+      "name": "Tricep Bodyweight Extension"
+    },
+    {
+      "href": "https://www.strengthlog.com/tricep-pushdown-with-bar/",
+      "name": "Tricep Pushdown With Bar"
+    },
+    {
+      "href": "https://www.strengthlog.com/tricep-pushdown-with-rope/",
+      "name": "Tricep Pushdown With Rope"
+    }
+  ]
+}

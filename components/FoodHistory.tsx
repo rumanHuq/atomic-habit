@@ -42,7 +42,7 @@ function foodListItem({
 	);
 }
 
-export function FoodHistory({ foodHistory, today }: { foodHistory: FoodHistoryType[]; today: string }) {
+export function FoodHistory({ foodHistory, date }: { foodHistory: FoodHistoryType[]; date: string }) {
 	const setCalorieOfTheDay = useStore((state) => state.setCalorieOfTheDay);
 	const deleteCalorieOfTheDay = useStore((state) => state.deleteCalorieOfTheDay);
 	const onPressModalActionCta: ActionModalProps["onPress"] = (props) => {
@@ -64,7 +64,7 @@ export function FoodHistory({ foodHistory, today }: { foodHistory: FoodHistoryTy
 					resultValueCalculationFn={(value) =>
 						modalState.data ? (modalState.data.foodHistory.calorie * value) / modalState.data.foodHistory.gram : 0
 					}
-					date={today}
+					date={date}
 					inputs={{
 						numberValue: modalState.data.foodHistory.gram,
 						textValue: modalState.data.foodHistory.food,
@@ -88,7 +88,7 @@ export function FoodHistory({ foodHistory, today }: { foodHistory: FoodHistoryTy
 						onSelect(modal) {
 							setModalState({
 								action: modal,
-								data: { foodHistory: props.item, date: today, index: props.index },
+								data: { foodHistory: props.item, date, index: props.index },
 								visibility: true,
 							});
 						},
@@ -103,7 +103,7 @@ export function FoodHistory({ foodHistory, today }: { foodHistory: FoodHistoryTy
 						onSetItem={(val) => {
 							const calorie = getCalorieInfo(val);
 							if (!calorie) return;
-							setCalorieOfTheDay(today, { food: val.textValue, calorie, gram: val.numberValue });
+							setCalorieOfTheDay(date, { food: val.textValue, calorie, gram: val.numberValue });
 						}}
 						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, foodHistory)}
 					/>
