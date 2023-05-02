@@ -6,11 +6,11 @@ import { ImageProps, TextStyle, ViewStyle, View, TouchableWithoutFeedback } from
 import { useStore } from "@/hooks/useStore";
 
 interface ActionInputProps {
-	onSetItem: (val: { textValue: string; numberValue: number }) => void;
+	onSetItem: (val: { textValue: string; numberValue: string }) => void;
 	textPlaceHolder: string;
 	numberPlaceHolder: string;
 	autoCompleteListFromGivenKeywordFn: (keyword: string) => string[];
-	resultValueFn: (val: { textValue: string; numberValue: number }) => number;
+	resultValueFn: (val: { textValue: string; numberValue: string }) => number;
 	resultPlaceHolderSuffix: string;
 }
 
@@ -41,12 +41,12 @@ export function ActionInput(props: ActionInputProps) {
 		resultPlaceHolderSuffix,
 	} = props;
 	const [textValue, setTextValue] = useState("");
-	const [numberValue, setNumberValue] = useState(-1);
+	const [numberValue, setNumberValue] = useState("-1");
 	const allDropdownVisible = useStore((state) => state.allDropdownVisible);
 	const setAllDropdownVisible = useStore((state) => state.setAllDropdownVisible);
 	const [localDropdownVisible, setLocalDropdownVisible] = useState(false);
 	const restInputs = () => {
-		setNumberValue(-1);
+		setNumberValue("-1");
 		setTextValue("");
 		setAllDropdownVisible(false);
 		setLocalDropdownVisible(false);
@@ -59,7 +59,8 @@ export function ActionInput(props: ActionInputProps) {
 	let resultValue: number | string = resultValueFn({ numberValue, textValue });
 	resultValue = resultValue > 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
 	const invalidTextValue = autoCompleteList.includes(textValue) === false;
-	const disabled = invalidTextValue || numberValue <= 0;
+	const invalidNumber = !numberValue.match(/^[1-9]\d*(\.\d+)?$/);
+	const disabled = invalidTextValue || invalidNumber || parseFloat(numberValue) <= 0;
 	const hideAutoSuggestion = () => {
 		setAllDropdownVisible(false);
 		setLocalDropdownVisible(false);
@@ -113,19 +114,16 @@ export function ActionInput(props: ActionInputProps) {
 				style={{ flex: 0.45 }}
 				placeholder={numberPlaceHolder ?? "provide value"}
 				size="small"
-				value={`${numberValue < 0 ? "" : numberValue}`}
-				keyboardType="decimal-pad"
-				onChangeText={(val) => {
-					const num = parseFloat(val);
-					setNumberValue(num >= 0 ? num : -1);
-				}}
+				value={`${!numberValue || parseFloat(numberValue) < 0 ? "" : numberValue}`}
+				keyboardType="number-pad"
+				onChangeText={setNumberValue}
 			/>
 			<Input
 				style={{ flex: 0.55 }}
 				onPressIn={hideAutoSuggestion}
 				size="small"
 				value={resultValue}
-				keyboardType="decimal-pad"
+				keyboardType="number-pad"
 				disabled
 			/>
 			<Button

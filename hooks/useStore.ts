@@ -4,10 +4,10 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-import { FoodHistory, DailyRecords, ExerciseHistory } from "@/@types/@types";
+import { FoodHistory, DateRecords, ExerciseHistory } from "@/@types/@types";
 
 interface State {
-	dailyRecords: DailyRecords;
+	dateRecords: DateRecords;
 	allDropdownVisible: boolean;
 }
 
@@ -15,6 +15,7 @@ interface Actions {
 	setCalorieOfTheDay(date: string, foodHistory: FoodHistory, index?: number): void;
 	deleteCalorieOfTheDay(date: string, index: number): void;
 	setExerciseOfTheDay(date: string, exercise: ExerciseHistory, index?: number): void;
+	deleteExerciseOfTheDay(date: string, index: number): void;
 	setInitialDataOfTheDay(date: string): void;
 	setAllDropdownVisible(toggle: boolean): void;
 	resetState(): void;
@@ -24,16 +25,28 @@ export const useStore = create(
 	persist(
 		immer<State & Actions>((set) => ({
 			allDropdownVisible: false,
-			dailyRecords: {},
+			dateRecords: {},
 			resetState() {
 				set((state) => {
-					state.dailyRecords = {};
+					state.dateRecords = {
+						"2023-04-30": {
+							exerciseHistories: [
+								{ name: "Farmers Walk", weight: 10 },
+								{ name: "Rich Walk", weight: 10 },
+							],
+							foodHistories: [],
+						},
+						"2023-05-01": {
+							exerciseHistories: [{ name: "Rich Walk", weight: 10 }],
+							foodHistories: [],
+						},
+					};
 				});
 			},
 			setInitialDataOfTheDay(date) {
 				set((state) => {
-					if (!state.dailyRecords[date]) {
-						state.dailyRecords[date] = { foodHistories: [], exerciseHistories: [] };
+					if (!state.dateRecords[date]) {
+						state.dateRecords[date] = { foodHistories: [], exerciseHistories: [] };
 					}
 				});
 			},
@@ -44,26 +57,31 @@ export const useStore = create(
 			},
 			deleteCalorieOfTheDay(date, index) {
 				set((state) => {
-					state.dailyRecords[date].foodHistories.splice(index, 1);
+					state.dateRecords[date].foodHistories.splice(index, 1);
 				});
 			},
 
 			setCalorieOfTheDay(date, foodHistory, index) {
 				set((state) => {
 					if (typeof index === "number") {
-						state.dailyRecords[date].foodHistories[index] = foodHistory;
+						state.dateRecords[date].foodHistories[index] = foodHistory;
 					} else {
-						state.dailyRecords[date].foodHistories.push(foodHistory);
+						state.dateRecords[date].foodHistories.push(foodHistory);
 					}
 				});
 			},
 			setExerciseOfTheDay(date, exercise, index) {
 				set((state) => {
 					if (typeof index === "number") {
-						state.dailyRecords[date].exerciseHistories[index] = exercise;
+						state.dateRecords[date].exerciseHistories[index] = exercise;
 					} else {
-						state.dailyRecords[date].exerciseHistories.push(exercise);
+						state.dateRecords[date].exerciseHistories.push(exercise);
 					}
+				});
+			},
+			deleteExerciseOfTheDay(date, index) {
+				set((state) => {
+					state.dateRecords[date].exerciseHistories.splice(index, 1);
 				});
 			},
 		})),

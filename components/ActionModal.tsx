@@ -15,7 +15,7 @@ export interface ActionModalProps {
 	inputs: ActionInput;
 	index: number;
 	onPress(props: { date: string; inputs: ActionInput & { index: number }; action: "delete" | "edit" }): void;
-	resultValueCalculationFn(val: number): number;
+	resultValueCalculationFn(val: string): number;
 }
 
 function Edit(props: {
@@ -39,13 +39,13 @@ export function ActionModal(props: ActionModalProps) {
 	const [value, setValue] = useState(inputs.numberValue.toFixed(0));
 	if (!action) return null;
 
-	const result = value ? resultValueCalculationFn(parseInt(value, 10)) : 0;
+	const result = value ? resultValueCalculationFn(value) : 0;
 	const status = action === "delete" ? "danger" : "primary";
 	const onPressHandler = () => {
 		onPress({
 			action,
 			date,
-			inputs: { numberValue: parseInt(value, 10), resultValue: result, textValue: inputs.textValue, index },
+			inputs: { numberValue: parseFloat(value), resultValue: result, textValue: inputs.textValue, index },
 		});
 		hideModalCallback();
 	};

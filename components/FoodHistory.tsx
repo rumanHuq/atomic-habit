@@ -62,7 +62,7 @@ export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistor
 			{modalState.data && (
 				<ActionModal
 					resultValueCalculationFn={(value) =>
-						modalState.data ? (modalState.data.foodHistory.calorie * value) / modalState.data.foodHistory.gram : 0
+						modalState.data ? (modalState.data.foodHistory.calorie * parseFloat(value)) / modalState.data.foodHistory.gram : 0
 					}
 					date={date}
 					inputs={{
@@ -102,8 +102,8 @@ export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistor
 						numberPlaceHolder="g/ml"
 						onSetItem={(val) => {
 							const calorie = getCalorieInfo(val);
-							if (!calorie) return;
-							setCalorieOfTheDay(date, { food: val.textValue, calorie, gram: val.numberValue });
+							if (!calorie || !val.numberValue) return;
+							setCalorieOfTheDay(date, { food: val.textValue, calorie, gram: parseFloat(val.numberValue) });
 						}}
 						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, foodHistories)}
 					/>
