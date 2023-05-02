@@ -17,6 +17,7 @@ interface Actions {
 	setExerciseOfTheDay(date: string, exercise: ExerciseHistory, index?: number): void;
 	setInitialDataOfTheDay(date: string): void;
 	setAllDropdownVisible(toggle: boolean): void;
+	resetState(): void;
 }
 
 export const useStore = create(
@@ -24,6 +25,18 @@ export const useStore = create(
 		immer<State & Actions>((set) => ({
 			allDropdownVisible: false,
 			dailyRecords: {},
+			resetState() {
+				set((state) => {
+					state.dailyRecords = {};
+				});
+			},
+			setInitialDataOfTheDay(date) {
+				set((state) => {
+					if (!state.dailyRecords[date]) {
+						state.dailyRecords[date] = { foodHistories: [], exerciseHistories: [] };
+					}
+				});
+			},
 			setAllDropdownVisible(toggle) {
 				set((state) => {
 					state.allDropdownVisible = toggle;
@@ -34,13 +47,7 @@ export const useStore = create(
 					state.dailyRecords[date].foodHistories.splice(index, 1);
 				});
 			},
-			setInitialDataOfTheDay(date) {
-				set((state) => {
-					if (!state.dailyRecords[date]) {
-						state.dailyRecords[date] = { foodHistories: [], exerciseHistories: [] };
-					}
-				});
-			},
+
 			setCalorieOfTheDay(date, foodHistory, index) {
 				set((state) => {
 					if (typeof index === "number") {

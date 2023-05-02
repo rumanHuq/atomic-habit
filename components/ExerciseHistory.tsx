@@ -5,13 +5,8 @@ import { DataGrid } from "./DataGrid";
 
 import { ExerciseHistory as ExerciseHistoryType } from "@/@types/@types";
 
-export function ExerciseHistory({
-	exerciseHistories,
-	date,
-}: {
-	exerciseHistories: ExerciseHistoryType[];
-	date: string;
-}) {
+export function ExerciseHistory(props: { exerciseHistories: ExerciseHistoryType[]; date: string }) {
+	const { exerciseHistories, date } = props;
 	return (
 		<DataGrid
 			title="Exercises!"

@@ -14,24 +14,22 @@
   - gram slider to adjust actual calories
   - pull calorie info from API
 
-
-# 02-05-2023
-- exercise lists in json file
-
-# 03-05-2023
-- Background task day change
-
-# 04-05-2023
+> 03-05-2023
 - Exercise feature work
 
-# 05-05-2023
+> 04-05-2023
+- Background task day change
+  - when day changes, check if there is unsaved entry of the day
+  - asks if user wants to move to a new day or carry on existing day modification if unsaved data is found
+
+> 05-05-2023
 - Main page feed planning
   - Feed visibility private/public/friends(not MVP)
   - Add comments to feed(not MVP)
 - check meetup app, probably same kinds of feed
 
-# 06-05-2023
+> 06-05-2023
 - Main page feature implementation
 
-# 07-05-2023
+> 07-05-2023
 - Main page feature implementation

@@ -13,7 +13,6 @@ interface DataGridProps<Data> extends ViewProps {
 
 export function DataGrid<Data>(props: DataGridProps<Data>) {
 	const { title, data, renderItem, autoSuggestionPlaceholder, tableHeaders, tableFooters, style, ...rest } = props;
-
 	return (
 		<View style={[style, { flex: 1, zIndex: -1 }]} {...rest}>
 			<Text category="h2">{title}</Text>

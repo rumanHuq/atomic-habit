@@ -8,16 +8,22 @@ import { TabScreen } from "@/components/TabScreen";
 import { useStore } from "@/hooks/useStore";
 import { getDateOfTheDay } from "@/utils/getDateOfTheDay";
 
+const { env } = process;
+
 export default function DetailsScreen() {
 	const date = getDateOfTheDay();
 	const dateRecords = useStore((state) => state.dailyRecords[date]);
 	const setInitialDataOfTheDay = useStore((state) => state.setInitialDataOfTheDay);
+	const resetState = useStore((state) => state.resetState);
 
 	useEffect(() => {
-		if (!dateRecords) {
+		if (env.NODE_ENV === "development") {
+			resetState();
+			setInitialDataOfTheDay(date);
+		} else if (!dateRecords) {
 			setInitialDataOfTheDay(date);
 		}
-	}, [date, dateRecords, setInitialDataOfTheDay]);
+	}, []);
 
 	if (!dateRecords) return null;
 	return (
