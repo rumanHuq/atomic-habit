@@ -3,13 +3,13 @@ export interface FoodHistory {
 	gram: number;
 	calorie: number;
 }
-export interface Exercise {
+export interface ExerciseHistory {
 	name: string;
 	weight: number;
 }
 export interface DailyRecords {
 	[date: string]: {
 		foodHistories: FoodHistory[];
-		exercises: Exercise[];
+		exerciseHistories: ExerciseHistory[];
 	};
 }

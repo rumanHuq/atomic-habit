@@ -42,7 +42,7 @@ function foodListItem({
 	);
 }
 
-export function FoodHistory({ foodHistory, date }: { foodHistory: FoodHistoryType[]; date: string }) {
+export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistoryType[]; date: string }) {
 	const setCalorieOfTheDay = useStore((state) => state.setCalorieOfTheDay);
 	const deleteCalorieOfTheDay = useStore((state) => state.deleteCalorieOfTheDay);
 	const onPressModalActionCta: ActionModalProps["onPress"] = (props) => {
@@ -79,9 +79,9 @@ export function FoodHistory({ foodHistory, date }: { foodHistory: FoodHistoryTyp
 			)}
 			<DataGrid
 				tableHeaders={["Food", "Calories"]}
-				tableFooters={["Total", foodHistory.reduce((acc, { calorie }) => acc + calorie, 0).toFixed(0)]}
+				tableFooters={["Total", foodHistories.reduce((acc, { calorie }) => acc + calorie, 0).toFixed(0)]}
 				title="Food Consumption"
-				data={foodHistory}
+				data={foodHistories}
 				renderItem={(props) =>
 					foodListItem({
 						...props,
@@ -105,7 +105,7 @@ export function FoodHistory({ foodHistory, date }: { foodHistory: FoodHistoryTyp
 							if (!calorie) return;
 							setCalorieOfTheDay(date, { food: val.textValue, calorie, gram: val.numberValue });
 						}}
-						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, foodHistory)}
+						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, foodHistories)}
 					/>
 				}
 			/>

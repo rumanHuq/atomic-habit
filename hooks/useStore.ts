@@ -4,7 +4,7 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-import { FoodHistory, DailyRecords, Exercise } from "@/@types/@types";
+import { FoodHistory, DailyRecords, ExerciseHistory } from "@/@types/@types";
 
 interface State {
 	dailyRecords: DailyRecords;
@@ -12,9 +12,9 @@ interface State {
 }
 
 interface Actions {
-	setCalorieOfTheDay(date: string, consumptionInfo: FoodHistory, index?: number): void;
+	setCalorieOfTheDay(date: string, foodHistory: FoodHistory, index?: number): void;
 	deleteCalorieOfTheDay(date: string, index: number): void;
-	setExerciseOfTheDay(date: string, exercise: Exercise, index?: number): void;
+	setExerciseOfTheDay(date: string, exercise: ExerciseHistory, index?: number): void;
 	setInitialDataOfTheDay(date: string): void;
 	setAllDropdownVisible(toggle: boolean): void;
 }
@@ -37,25 +37,25 @@ export const useStore = create(
 			setInitialDataOfTheDay(date) {
 				set((state) => {
 					if (!state.dailyRecords[date]) {
-						state.dailyRecords[date] = { foodHistories: [], exercises: [] };
+						state.dailyRecords[date] = { foodHistories: [], exerciseHistories: [] };
 					}
 				});
 			},
-			setCalorieOfTheDay(date, consumptionInfo, index) {
+			setCalorieOfTheDay(date, foodHistory, index) {
 				set((state) => {
 					if (typeof index === "number") {
-						state.dailyRecords[date].foodHistories[index] = consumptionInfo;
+						state.dailyRecords[date].foodHistories[index] = foodHistory;
 					} else {
-						state.dailyRecords[date].foodHistories.push(consumptionInfo);
+						state.dailyRecords[date].foodHistories.push(foodHistory);
 					}
 				});
 			},
 			setExerciseOfTheDay(date, exercise, index) {
 				set((state) => {
 					if (typeof index === "number") {
-						state.dailyRecords[date].exercises[index] = exercise;
+						state.dailyRecords[date].exerciseHistories[index] = exercise;
 					} else {
-						state.dailyRecords[date].exercises.push(exercise);
+						state.dailyRecords[date].exerciseHistories.push(exercise);
 					}
 				});
 			},
