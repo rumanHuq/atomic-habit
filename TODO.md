@@ -18,6 +18,7 @@
 # 02-05-2023
 - long press edit entry with [popup](https://www.npmjs.com/package/react-native-popup-menu)
 - exercise lists in json file
+- probably autosuggest menu needs replacement
 
 # 03-05-2023
 - Exercise feature work

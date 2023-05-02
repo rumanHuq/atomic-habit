@@ -4,44 +4,49 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-import { Calorie, DailyRecords, Exercise } from "@/@types/@types";
+import { FoodHistory, DailyRecords, Exercise } from "@/@types/@types";
 
 interface State {
 	dailyRecords: DailyRecords;
-	dropdownVisible: boolean;
+	allDropdownVisible: boolean;
 }
 
 interface Actions {
-	setCalorieOfTheDay(date: string, consumptionInfo: Calorie, index?: number): void;
+	setCalorieOfTheDay(date: string, consumptionInfo: FoodHistory, index?: number): void;
+	deleteCalorieOfTheDay(date: string, index: number): void;
 	setExerciseOfTheDay(date: string, exercise: Exercise, index?: number): void;
 	setInitialDataOfTheDay(date: string): void;
-	setDropdownVisible(toggle: boolean): void;
+	setAllDropdownVisible(toggle: boolean): void;
 }
 
 export const useStore = create(
 	persist(
 		immer<State & Actions>((set) => ({
-			dropdownVisible: false,
+			allDropdownVisible: false,
 			dailyRecords: {},
-			setDropdownVisible(toggle) {
+			setAllDropdownVisible(toggle) {
 				set((state) => {
-					state.dropdownVisible = toggle;
+					state.allDropdownVisible = toggle;
+				});
+			},
+			deleteCalorieOfTheDay(date, index) {
+				set((state) => {
+					state.dailyRecords[date].foodHistories.splice(index, 1);
 				});
 			},
 			setInitialDataOfTheDay(date) {
 				set((state) => {
 					if (!state.dailyRecords[date]) {
-						state.dailyRecords[date] = { calories: [], exercises: [] };
+						state.dailyRecords[date] = { foodHistories: [], exercises: [] };
 					}
 				});
 			},
-			setCalorieOfTheDay(date, consumptionInfo) {
+			setCalorieOfTheDay(date, consumptionInfo, index) {
 				set((state) => {
-					const index = state.dailyRecords[date].calories.findIndex((c) => c.food === consumptionInfo.food);
-					if (index !== -1) {
-						state.dailyRecords[date].calories[index].calorie += consumptionInfo.calorie;
+					if (typeof index === "number") {
+						state.dailyRecords[date].foodHistories[index] = consumptionInfo;
 					} else {
-						state.dailyRecords[date].calories.push(consumptionInfo);
+						state.dailyRecords[date].foodHistories.push(consumptionInfo);
 					}
 				});
 			},

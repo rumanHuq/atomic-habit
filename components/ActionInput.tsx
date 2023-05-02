@@ -42,12 +42,14 @@ export function ActionInput(props: ActionInputProps) {
 	} = props;
 	const [textValue, setTextValue] = useState("");
 	const [numberValue, setNumberValue] = useState(-1);
-	const dropdownVisible = useStore((state) => state.dropdownVisible);
-	const setDropdownVisible = useStore((state) => state.setDropdownVisible);
+	const allDropdownVisible = useStore((state) => state.allDropdownVisible);
+	const setAllDropdownVisible = useStore((state) => state.setAllDropdownVisible);
+	const [localDropdownVisible, setLocalDropdownVisible] = useState(false);
 	const restInputs = () => {
 		setNumberValue(-1);
 		setTextValue("");
-		setDropdownVisible(false);
+		setAllDropdownVisible(false);
+		setLocalDropdownVisible(false);
 	};
 	const onPressAddButton = () => {
 		onSetItem({ textValue, numberValue });
@@ -58,22 +60,27 @@ export function ActionInput(props: ActionInputProps) {
 	resultValue = resultValue > 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
 	const invalidTextValue = data.includes(textValue) === false;
 	const disabled = invalidTextValue || numberValue <= 0;
+	const hideAutoSuggestion = () => {
+		setAllDropdownVisible(false);
+		setLocalDropdownVisible(false);
+	};
 	return (
 		<View style={[styles]}>
 			<View style={{ flex: 1 }}>
 				<Input
-					onBlur={() => setDropdownVisible(false)}
+					onBlur={hideAutoSuggestion}
 					placeholder={textPlaceHolder ?? "provide value"}
 					size="small"
 					keyboardType="web-search"
 					onChangeText={(txt) => {
 						setTextValue(txt);
-						setDropdownVisible(txt.length > 2);
+						setLocalDropdownVisible(txt.length > 2);
+						setAllDropdownVisible(txt.length > 2);
 					}}
 					value={textValue}
 					accessoryRight={(imageProps) => RemoveIcon({ ...imageProps, onPress: () => setTextValue("") })}
 				/>
-				{textValue && dropdownVisible && data.length > 0 && (
+				{textValue && localDropdownVisible && allDropdownVisible && data.length > 0 && (
 					<List
 						style={{
 							borderWidth: 1,
@@ -91,8 +98,8 @@ export function ActionInput(props: ActionInputProps) {
 							<ListItem
 								title={item}
 								onPress={() => {
+									hideAutoSuggestion();
 									setTextValue(item);
-									setDropdownVisible(false);
 								}}
 							/>
 						)}
@@ -100,7 +107,7 @@ export function ActionInput(props: ActionInputProps) {
 				)}
 			</View>
 			<Input
-				onBlur={() => setDropdownVisible(false)}
+				onBlur={hideAutoSuggestion}
 				disabled={invalidTextValue}
 				style={{ flex: 0.45 }}
 				placeholder={numberPlaceHolder ?? "provide value"}
@@ -114,7 +121,7 @@ export function ActionInput(props: ActionInputProps) {
 			/>
 			<Input
 				style={{ flex: 0.55 }}
-				onPressIn={() => setDropdownVisible(false)}
+				onPressIn={hideAutoSuggestion}
 				size="small"
 				value={resultValue}
 				keyboardType="decimal-pad"

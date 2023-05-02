@@ -1,12 +1,12 @@
 import { uniq } from "lodash";
 
-import { Calorie } from "@/@types/@types";
+import { FoodHistory } from "@/@types/@types";
 import caloriesDb from "@/calories_db.json";
 
-export function foodFilterFunction(word: string, caloriesHistory: Calorie[]) {
+export function foodFilterFunction(word: string, foodHistories: FoodHistory[]) {
 	const keyword = word.trim();
 	if (keyword.length < 3) return [];
-	const foodNamesInHistory = caloriesHistory.map((c) => c.food);
+	const foodNamesInHistory = foodHistories.map((c) => c.food);
 	return uniq(
 		caloriesDb
 			.filter(
