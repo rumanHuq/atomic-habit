@@ -6,8 +6,9 @@ import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client
 import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { Tabs } from "expo-router";
 import { useEffect } from "react";
-import { useColorScheme, AppState, Platform } from "react-native";
 import type { AppStateStatus } from "react-native";
+import { useColorScheme, AppState, Platform } from "react-native";
+import { EventProvider } from "react-native-outside-press";
 import { MenuProvider } from "react-native-popup-menu";
 
 import { FeatherIconsPack } from "@/lib/iconPack";
@@ -59,17 +60,19 @@ export default function Layout() {
 	return (
 		<PersistQueryClientProvider client={queryClient} persistOptions={{ persister: asyncStoragePersister }}>
 			<IconRegistry icons={FeatherIconsPack} />
-			<ApplicationProvider {...eva} theme={theme}>
-				<MenuProvider>
-					<Tabs
-						screenOptions={{
-							headerStyle: { backgroundColor: styles.backgroundColor },
-							headerTitleStyle: { color: styles.color },
-							tabBarStyle: { backgroundColor: styles.backgroundColor, paddingTop: 8 },
-						}}
-					/>
-				</MenuProvider>
-			</ApplicationProvider>
+			<EventProvider style={{ flex: 1 }}>
+				<ApplicationProvider {...eva} theme={theme}>
+					<MenuProvider>
+						<Tabs
+							screenOptions={{
+								headerStyle: { backgroundColor: styles.backgroundColor },
+								headerTitleStyle: { color: styles.color },
+								tabBarStyle: { backgroundColor: styles.backgroundColor, paddingTop: 8 },
+							}}
+						/>
+					</MenuProvider>
+				</ApplicationProvider>
+			</EventProvider>
 		</PersistQueryClientProvider>
 	);
 }

@@ -1,14 +1,20 @@
-import caloriesDb from "@/calories_db.json";
+import { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
 
-export function getCalorieInfo({ textValue, numberValue }: { textValue: string; numberValue: string }) {
-	if (!numberValue) return 0;
-	const num = parseFloat(numberValue);
-	const found = caloriesDb.find((i) => i.name === textValue);
-	if (!found) return 0;
-	const quantity = (found.serving.match(/[0-9]+\s(g|ml)/) ?? [])[0]?.split(" ")[0];
+interface GetCalorieInfoProps {
+	foodItem: (TAutocompleteDropdownItem & Record<string, unknown>) | null;
+	gram: string;
+}
+
+export function getCalorieInfo(props: GetCalorieInfoProps) {
+	const { foodItem, gram } = props;
+	if (!gram || typeof foodItem?.serving !== "string" || typeof foodItem?.calories !== "string") return 0;
+
+	const gramInt = parseFloat(gram.replace(",", "."));
+
+	const quantity = (foodItem.serving.match(/[0-9]+\s(g|ml)/) ?? [])[0]?.split(" ")[0];
 	if (!quantity) return 0;
-	const gram = parseFloat(quantity);
-	const calories = parseFloat(found.calories.split(" ")[0]);
-	const calorie = (calories * num) / gram;
+	const gramFloat = parseFloat(quantity.replace(",", "."));
+	const calories = parseFloat(foodItem.calories.split(" ")[0].replace(",", "."));
+	const calorie = (calories * gramInt) / gramFloat;
 	return calorie;
 }

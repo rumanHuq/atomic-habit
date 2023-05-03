@@ -1,5 +1,8 @@
-import { Layout, Text } from "@ui-kitten/components";
+import { Icon, Layout, Text } from "@ui-kitten/components";
+import * as WebBrowser from "expo-web-browser";
+import { uniqBy } from "lodash";
 import { useState } from "react";
+import { Pressable } from "react-native";
 import { Menu, MenuOption, MenuOptions, MenuTrigger } from "react-native-popup-menu";
 
 import { ActionInput } from "./ActionInput";
@@ -7,8 +10,8 @@ import { ActionModal, ActionModalProps } from "./ActionModal";
 import { DataGrid } from "./DataGrid";
 
 import { DateRecords, ExerciseHistory as ExerciseHistoryType } from "@/@types/@types";
+import exercisesDb from "@/exercises_db.json";
 import { useStore } from "@/hooks/useStore";
-import { exerciseFilterFunction } from "@/utils/exerciseFilterFunction";
 import { getProgressiveOverloadSuggestion } from "@/utils/getProgressiveOverloadSuggestion";
 
 interface ModalProps {
@@ -27,13 +30,18 @@ function exerciseListItem(props: {
 		<Menu key={index}>
 			<MenuTrigger triggerOnLongPress customStyles={{ triggerTouchable: { activeOpacity: 0.3 } }}>
 				<Layout style={{ flexDirection: "row", alignItems: "center", height: 50 }} level="2">
-					<Text style={{ flex: 1, textAlign: "center" }}>{item.name}</Text>
+					<Pressable style={{ flex: 1 }} onPress={() => WebBrowser.openBrowserAsync(item.href)}>
+						<Text style={{ textAlign: "center" }}>
+							{item.title}&nbsp;
+							<Icon name="external-link" />
+						</Text>
+					</Pressable>
 					<Text style={{ flex: 1, textAlign: "center" }}>{item.weight.toFixed(0)}</Text>
 				</Layout>
 			</MenuTrigger>
-			<MenuOptions optionsContainerStyle={{ width: "70%", marginLeft: 50 }}>
-				<MenuOption onSelect={() => onSelect("edit")} text="Edit" />
-				<MenuOption onSelect={() => onSelect("delete")} text="delete" />
+			<MenuOptions optionsContainerStyle={{ padding: 8, marginLeft: 50 }}>
+				<MenuOption style={{ height: 40, justifyContent: "center" }} onSelect={() => onSelect("edit")} text="Edit" />
+				<MenuOption style={{ height: 40, justifyContent: "center" }} onSelect={() => onSelect("delete")} text="delete" />
 			</MenuOptions>
 		</Menu>
 	);
@@ -51,11 +59,22 @@ export function ExerciseHistory(props: { dateRecords: DateRecords; date: string 
 		} else if (item.action === "edit") {
 			setExerciseOfTheDay(
 				item.date,
-				{ weight: item.inputs.resultValue, name: item.inputs.textValue, progressiveOverload: item.inputs.resultValue },
+				{
+					weight: item.inputs.resultValue,
+					title: item.inputs.title,
+					id: item.inputs.id,
+					// @ts-expect-error
+					href: item.inputs.href,
+					progressiveOverload: item.inputs.resultValue,
+				},
 				item.inputs.index
 			);
 		}
 	};
+	const dataSet = uniqBy(
+		exercisesDb.filter((c) => !dayExerciseRecord.map((f) => f.title).includes(c.title)),
+		"title"
+	);
 	return (
 		<>
 			{modalState.data && (
@@ -64,8 +83,8 @@ export function ExerciseHistory(props: { dateRecords: DateRecords; date: string 
 						modalState.data
 							? getProgressiveOverloadSuggestion({
 									dateRecords,
-									numberValue,
-									textValue: modalState.data?.exerciseHistory.name,
+									weight: numberValue,
+									exercise: { id: modalState.data?.exerciseHistory.id, title: modalState.data?.exerciseHistory.title },
 									editingDate: date,
 							  })
 							: 0
@@ -73,7 +92,8 @@ export function ExerciseHistory(props: { dateRecords: DateRecords; date: string 
 					date={date}
 					inputs={{
 						numberValue: modalState.data.exerciseHistory.weight,
-						textValue: modalState.data.exerciseHistory.name,
+						title: modalState.data.exerciseHistory.title,
+						id: modalState.data.exerciseHistory.id,
 						resultValue: modalState.data.exerciseHistory.progressiveOverload,
 					}}
 					visible={modalState.visibility}
@@ -102,22 +122,27 @@ export function ExerciseHistory(props: { dateRecords: DateRecords; date: string 
 				}
 				autoSuggestionPlaceholder={
 					<ActionInput
-						resultValueFn={(p) => getProgressiveOverloadSuggestion({ ...p, dateRecords })}
+						direction="up"
+						resultValueFn={(p) =>
+							getProgressiveOverloadSuggestion({ weight: p.numberValue, exercise: p.selectedItem, dateRecords })
+						}
+						dataSet={dataSet}
 						resultPlaceHolderSuffix="%"
-						textPlaceHolder="Pump it!"
 						numberPlaceHolder="kg"
-						onSetItem={(info) =>
+						onSetItem={(info) => {
+							if (!info.selectedItem?.title) return;
 							setExerciseOfTheDay(date, {
-								name: info.textValue,
-								weight: parseFloat(info.numberValue),
+								title: info.selectedItem.title,
+								id: info.selectedItem.id,
+								href: info.selectedItem.href,
+								weight: parseFloat(info.numberValue.replace(",", ".")),
 								progressiveOverload: getProgressiveOverloadSuggestion({
 									dateRecords,
-									numberValue: info.numberValue,
-									textValue: info.textValue,
+									weight: info.numberValue,
+									exercise: info.selectedItem,
 								}),
-							})
-						}
-						autoCompleteListFromGivenKeywordFn={(keyword) => exerciseFilterFunction(keyword, dayExerciseRecord)}
+							});
+						}}
 					/>
 				}
 			/>

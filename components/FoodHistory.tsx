@@ -1,4 +1,5 @@
 import { Layout, Text } from "@ui-kitten/components";
+import { uniq, uniqBy } from "lodash";
 import { useState } from "react";
 import { Menu, MenuOption, MenuOptions, MenuTrigger } from "react-native-popup-menu";
 
@@ -7,8 +8,8 @@ import { ActionModal, ActionModalProps } from "./ActionModal";
 import { DataGrid } from "./DataGrid";
 
 import { FoodHistory as FoodHistoryType } from "@/@types/@types";
+import caloriesDb from "@/calories_db.json";
 import { useStore } from "@/hooks/useStore";
-import { foodFilterFunction } from "@/utils/foodFilterFunction";
 import { getCalorieInfo } from "@/utils/getCalorieInfo";
 
 interface ModalProps {
@@ -30,13 +31,13 @@ function foodListItem({
 		<Menu key={index}>
 			<MenuTrigger triggerOnLongPress customStyles={{ triggerTouchable: { activeOpacity: 0.3 } }}>
 				<Layout style={{ flexDirection: "row", alignItems: "center", height: 50 }} level="2">
-					<Text style={{ flex: 1, textAlign: "center" }}>{item.food}</Text>
+					<Text style={{ flex: 1, textAlign: "center" }}>{item.title}</Text>
 					<Text style={{ flex: 1, textAlign: "center" }}>{item.calorie.toFixed(0)}</Text>
 				</Layout>
 			</MenuTrigger>
-			<MenuOptions optionsContainerStyle={{ width: "70%", marginLeft: 50 }}>
-				<MenuOption onSelect={() => onSelect("edit")} text="Edit" />
-				<MenuOption onSelect={() => onSelect("delete")} text="delete" />
+			<MenuOptions optionsContainerStyle={{ padding: 8, marginLeft: 50 }}>
+				<MenuOption style={{ height: 40, justifyContent: "center" }} onSelect={() => onSelect("edit")} text="Edit" />
+				<MenuOption style={{ height: 40, justifyContent: "center" }} onSelect={() => onSelect("delete")} text="delete" />
 			</MenuOptions>
 		</Menu>
 	);
@@ -51,23 +52,35 @@ export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistor
 		} else if (props.action === "edit") {
 			setCalorieOfTheDay(
 				props.date,
-				{ calorie: props.inputs.resultValue, food: props.inputs.textValue, gram: props.inputs.numberValue },
+				{
+					calorie: props.inputs.resultValue,
+					title: props.inputs.title,
+					gram: props.inputs.numberValue,
+					id: props.inputs.id,
+				},
 				props.inputs.index
 			);
 		}
 	};
 	const [modalState, setModalState] = useState<ModalProps>({ visibility: false });
+	const dataSet = uniqBy(
+		caloriesDb.filter((c) => !foodHistories.map((f) => f.title).includes(c.title)),
+		"title"
+	);
 	return (
 		<>
 			{modalState.data && (
 				<ActionModal
 					resultValueCalculationFn={(value) =>
-						modalState.data ? (modalState.data.foodHistory.calorie * parseFloat(value)) / modalState.data.foodHistory.gram : 0
+						modalState.data
+							? (modalState.data.foodHistory.calorie * parseFloat(value.replace(",", "."))) / modalState.data.foodHistory.gram
+							: 0
 					}
 					date={date}
 					inputs={{
 						numberValue: modalState.data.foodHistory.gram,
-						textValue: modalState.data.foodHistory.food,
+						title: modalState.data.foodHistory.title,
+						id: modalState.data.foodHistory.id,
 						resultValue: modalState.data.foodHistory.calorie,
 					}}
 					visible={modalState.visibility}
@@ -96,16 +109,20 @@ export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistor
 				}
 				autoSuggestionPlaceholder={
 					<ActionInput
-						resultValueFn={getCalorieInfo}
+						dataSet={dataSet}
+						resultValueFn={({ numberValue, selectedItem }) => getCalorieInfo({ gram: numberValue, foodItem: selectedItem })}
 						resultPlaceHolderSuffix="cal"
-						textPlaceHolder="What did you eat"
 						numberPlaceHolder="g/ml"
 						onSetItem={(val) => {
-							const calorie = getCalorieInfo(val);
-							if (!calorie || !val.numberValue) return;
-							setCalorieOfTheDay(date, { food: val.textValue, calorie, gram: parseFloat(val.numberValue) });
+							const calorie = getCalorieInfo({ gram: val.numberValue, foodItem: val.selectedItem });
+							if (!calorie || !val.numberValue || !val.selectedItem?.title) return;
+							setCalorieOfTheDay(date, {
+								title: val.selectedItem.title,
+								id: val.selectedItem.id,
+								calorie,
+								gram: parseFloat(val.numberValue.replace(",", ".")),
+							});
 						}}
-						autoCompleteListFromGivenKeywordFn={(w) => foodFilterFunction(w, foodHistories)}
 					/>
 				}
 			/>

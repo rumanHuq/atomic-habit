@@ -1,17 +1,16 @@
-import { Icon, Button, Input, List, ListItem, useTheme } from "@ui-kitten/components";
+import { Icon, Button, Input } from "@ui-kitten/components";
 import { omit } from "lodash";
 import { useState } from "react";
-import { ImageProps, TextStyle, ViewStyle, View, TouchableWithoutFeedback } from "react-native";
+import { TextStyle, ViewStyle, View, useColorScheme, Keyboard } from "react-native";
+import { AutocompleteDropdown, TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
 
-import { useStore } from "@/hooks/useStore";
-
-interface ActionInputProps {
-	onSetItem: (val: { textValue: string; numberValue: string }) => void;
-	textPlaceHolder: string;
+interface ActionInputProps<T> {
+	direction?: "up" | "down";
 	numberPlaceHolder: string;
-	autoCompleteListFromGivenKeywordFn: (keyword: string) => string[];
-	resultValueFn: (val: { textValue: string; numberValue: string }) => number;
 	resultPlaceHolderSuffix: string;
+	onSetItem: (val: { selectedItem: (TAutocompleteDropdownItem & T) | null; numberValue: string }) => void;
+	resultValueFn: (val: { selectedItem: (TAutocompleteDropdownItem & T) | null; numberValue: string }) => number;
+	dataSet: (TAutocompleteDropdownItem & T)[];
 }
 
 function AddIcon({ style }: { style: { height: number; marginHorizontal: number; tintColor: string; width: number } }) {
@@ -22,110 +21,71 @@ function AddIcon({ style }: { style: { height: number; marginHorizontal: number;
 
 const styles: ViewStyle = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: 6 };
 
-function RemoveIcon({ onPress, ...imageProps }: Partial<ImageProps> & { onPress: () => void }) {
-	return (
-		<TouchableWithoutFeedback onPress={onPress}>
-			<Icon {...imageProps} name="x" style={{ display: "flex" }} />
-		</TouchableWithoutFeedback>
-	);
-}
-
-export function ActionInput(props: ActionInputProps) {
-	const theme = useTheme();
-	const {
-		onSetItem,
-		textPlaceHolder,
-		numberPlaceHolder,
-		autoCompleteListFromGivenKeywordFn,
-		resultValueFn,
-		resultPlaceHolderSuffix,
-	} = props;
-	const [textValue, setTextValue] = useState("");
+export function ActionInput<T extends Record<string, unknown>>(props: ActionInputProps<T>) {
+	const { onSetItem, numberPlaceHolder, resultValueFn, resultPlaceHolderSuffix, dataSet, direction = "down" } = props;
+	const [selectedItem, setSelectedItem] = useState<(TAutocompleteDropdownItem & T) | null>(null);
 	const [numberValue, setNumberValue] = useState("-1");
-	const allDropdownVisible = useStore((state) => state.allDropdownVisible);
-	const setAllDropdownVisible = useStore((state) => state.setAllDropdownVisible);
-	const [localDropdownVisible, setLocalDropdownVisible] = useState(false);
+	const [styleState, setStyleState] = useState<"focus" | "blur">("focus");
+	const colorScheme = useColorScheme() ?? "light";
+	const autocompleteStyles = {
+		dark: {
+			focus: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(34,43,69)", borderColor: "rgb(100,87,166)" },
+			blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(25,33,56)", borderColor: "rgb(22,28,49)" },
+		},
+		light: {
+			focus: { fontColor: "rgb(174,180,198)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(155,146,210)" },
+			blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(237,241,247)" },
+		},
+	};
 	const restInputs = () => {
 		setNumberValue("-1");
-		setTextValue("");
-		setAllDropdownVisible(false);
-		setLocalDropdownVisible(false);
+		setSelectedItem(null);
+		Keyboard.dismiss();
 	};
 	const onPressAddButton = () => {
-		onSetItem({ textValue, numberValue });
+		onSetItem({ selectedItem, numberValue });
 		restInputs();
 	};
-	const autoCompleteList = autoCompleteListFromGivenKeywordFn(textValue);
-	let resultValue: number | string = resultValueFn({ numberValue, textValue });
-	resultValue = resultValue > 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
-	const invalidTextValue = autoCompleteList.includes(textValue) === false;
-	const invalidNumber = !numberValue.match(/^[1-9]\d*(\.\d+)?$/);
-	const disabled = invalidTextValue || invalidNumber || parseFloat(numberValue) <= 0;
-	const hideAutoSuggestion = () => {
-		setAllDropdownVisible(false);
-		setLocalDropdownVisible(false);
-	};
+	let resultValue: number | string = resultValueFn({ numberValue, selectedItem });
+	resultValue = resultValue >= 0 ? `${resultValue.toFixed(0)} ${resultPlaceHolderSuffix}` : "n/a";
+	const invalidNumber = !numberValue.match(/^[1-9]\d*((\.|,)\d+)?$/);
+	const disabled = invalidNumber || parseFloat(numberValue.replace(",", ".")) < 0;
+
 	return (
 		<View style={[styles]}>
-			<View style={{ flex: 1 }}>
-				<Input
-					focusable={autoCompleteList.length > 0}
-					onFocus={hideAutoSuggestion}
-					placeholder={textPlaceHolder ?? "provide value"}
-					size="small"
-					keyboardType="web-search"
-					onChangeText={(txt) => {
-						setTextValue(txt);
-						setLocalDropdownVisible(txt.length > 2);
-						setAllDropdownVisible(txt.length > 2);
-					}}
-					value={textValue}
-					accessoryRight={(imageProps) => RemoveIcon({ ...imageProps, onPress: () => setTextValue("") })}
-				/>
-				{textValue && localDropdownVisible && allDropdownVisible && autoCompleteList.length > 0 && (
-					<List
-						style={{
-							borderWidth: 1,
-							borderRadius: 3,
-							borderColor: theme["text-hint-color"],
-							position: "absolute",
-							width: "100%",
-							maxHeight: 180,
-							top: 36,
-							left: 0,
-							zIndex: 1,
-						}}
-						data={autoCompleteList}
-						renderItem={({ item }) => (
-							<ListItem
-								title={item}
-								onPress={() => {
-									hideAutoSuggestion();
-									setTextValue(item);
-								}}
-							/>
-						)}
-					/>
-				)}
-			</View>
+			<AutocompleteDropdown
+				direction={direction}
+				onFocus={() => setStyleState("focus")}
+				onBlur={() => setStyleState("blur")}
+				textInputProps={{
+					style: { height: 30, fontSize: 12, color: autocompleteStyles[colorScheme][styleState].fontColor },
+				}}
+				containerStyle={{ flex: 1, justifyContent: "center", alignItems: "center", height: 30 }}
+				inputContainerStyle={{
+					height: 30,
+					flex: 1,
+					borderColor: autocompleteStyles[colorScheme][styleState].borderColor,
+					backgroundColor: autocompleteStyles[colorScheme][styleState].backgroundColor,
+					borderWidth: 1,
+				}}
+				initialValue={selectedItem ?? undefined}
+				rightButtonsContainerStyle={{ height: 30 }}
+				clearOnFocus
+				closeOnBlur={false}
+				// @ts-expect-error
+				onSelectItem={setSelectedItem}
+				dataSet={dataSet}
+			/>
 			<Input
-				onFocus={hideAutoSuggestion}
-				disabled={invalidTextValue}
+				// disabled={invalidTextValue}
 				style={{ flex: 0.45 }}
 				placeholder={numberPlaceHolder ?? "provide value"}
 				size="small"
-				value={`${!numberValue || parseFloat(numberValue) < 0 ? "" : numberValue}`}
-				keyboardType="number-pad"
+				value={`${!numberValue || parseFloat(numberValue.replace(",", ".")) < 0 ? "" : numberValue}`}
+				keyboardType="decimal-pad"
 				onChangeText={setNumberValue}
 			/>
-			<Input
-				style={{ flex: 0.55 }}
-				onPressIn={hideAutoSuggestion}
-				size="small"
-				value={resultValue}
-				keyboardType="number-pad"
-				disabled
-			/>
+			<Input style={{ flex: 0.55 }} size="small" value={resultValue} keyboardType="number-pad" disabled />
 			<Button
 				accessoryLeft={AddIcon}
 				size="small"

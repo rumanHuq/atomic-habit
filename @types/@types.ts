@@ -1,10 +1,13 @@
-export interface FoodHistory {
-	food: string;
+import { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+
+export interface FoodHistory extends NonNullable<TAutocompleteDropdownItem> {
+	title: string;
 	gram: number;
 	calorie: number;
 }
-export interface ExerciseHistory {
-	name: string;
+export interface ExerciseHistory extends NonNullable<TAutocompleteDropdownItem> {
+	title: string;
+	href: string;
 	weight: number;
 	progressiveOverload: number;
 }
@@ -13,4 +16,12 @@ export interface DateRecords {
 		foodHistories: FoodHistory[];
 		exerciseHistories: ExerciseHistory[];
 	};
+}
+
+export interface FoodItem {
+	id: string;
+	group: string;
+	title: string;
+	calories: string;
+	serving: string;
 }

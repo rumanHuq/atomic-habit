@@ -15,7 +15,7 @@
   - pull calorie info from API
 
 > 03-05-2023
-- Exercise feature work
+- Fix the Auto suggest showing all bug
 
 > 04-05-2023
 - Background task day change

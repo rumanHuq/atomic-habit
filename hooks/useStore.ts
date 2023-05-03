@@ -31,13 +31,19 @@ export const useStore = create(
 					state.dateRecords = {
 						"2023-04-30": {
 							exerciseHistories: [
-								{ name: "Farmers Walk", weight: 10 },
-								{ name: "Rich Walk", weight: 10 },
+								{
+									title: "Farmers Walk",
+									id: "113",
+									weight: 10,
+									progressiveOverload: 0,
+									href: "https://www.strengthlog.com/farmers-walk/",
+								},
+								{ title: "Rich Walk", id: "999999", weight: 10, progressiveOverload: 0, href: "" },
 							],
 							foodHistories: [],
 						},
 						"2023-05-01": {
-							exerciseHistories: [{ name: "Rich Walk", weight: 10 }],
+							exerciseHistories: [{ title: "Rich Walk", id: "999999", weight: 10, progressiveOverload: 0, href: "" }],
 							foodHistories: [],
 						},
 					};

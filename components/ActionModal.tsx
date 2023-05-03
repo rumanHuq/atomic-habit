@@ -3,7 +3,8 @@ import { useState } from "react";
 import { View } from "react-native";
 
 interface ActionInput {
-	textValue: string;
+	title: string;
+	id: string;
 	numberValue: number;
 	resultValue: number;
 }
@@ -19,15 +20,15 @@ export interface ActionModalProps {
 }
 
 function Edit(props: {
-	textValue: string;
+	title: string;
 	numberValue: string;
 	resultValue: string;
 	onChangeText: (text: string) => void;
 }) {
-	const { textValue, numberValue, resultValue, onChangeText } = props;
+	const { title, numberValue, resultValue, onChangeText } = props;
 	return (
 		<View style={{ flexDirection: "row", columnGap: 8, width: 300 }}>
-			<Input disabled value={textValue} style={{ flex: 1 }} />
+			<Input disabled value={title} style={{ flex: 1 }} />
 			<Input value={numberValue} onChangeText={onChangeText} style={{ flex: 0.5 }} />
 			<Input disabled value={resultValue} style={{ flex: 0.5 }} />
 		</View>
@@ -45,7 +46,13 @@ export function ActionModal(props: ActionModalProps) {
 		onPress({
 			action,
 			date,
-			inputs: { numberValue: parseFloat(value), resultValue: result, textValue: inputs.textValue, index },
+			inputs: {
+				numberValue: parseFloat(value.replace(",", ".")),
+				resultValue: result,
+				title: inputs.title,
+				id: inputs.id,
+				index,
+			},
 		});
 		hideModalCallback();
 	};
@@ -76,7 +83,12 @@ export function ActionModal(props: ActionModalProps) {
 				)}
 				{status === "primary" && inputs && date && (
 					<Edit
-						{...{ numberValue: value, onChangeText: setValue, resultValue: result.toFixed(0), textValue: inputs.textValue }}
+						{...{
+							numberValue: value,
+							onChangeText: setValue,
+							resultValue: result.toFixed(0),
+							title: inputs.title,
+						}}
 					/>
 				)}
 			</Card>

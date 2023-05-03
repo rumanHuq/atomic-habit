@@ -1,1087 +1,1304 @@
 [
 	{
+		"id": "0",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/cable-crunch/",
-		"name": "Cable Crunch"
+		"title": "Cable Crunch"
 	},
 	{
+		"id": "1",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/crunch/",
-		"name": "Crunch"
+		"title": "Crunch"
 	},
 	{
+		"id": "2",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/dead-bugs/",
-		"name": "Dead Bug"
+		"title": "Dead Bug"
 	},
 	{
+		"id": "3",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/hanging-leg-raise/",
-		"name": "Hanging Leg Raise"
+		"title": "Hanging Leg Raise"
 	},
 	{
+		"id": "4",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/hanging-knee-raise/",
-		"name": "Hanging Knee Raise"
+		"title": "Hanging Knee Raise"
 	},
 	{
+		"id": "5",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/hanging-sit-up/",
-		"name": "Hanging Sit-Up"
+		"title": "Hanging Sit-Up"
 	},
 	{
+		"id": "6",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/high-to-low-wood-chop-with-band/",
-		"name": "High to Low Wood Chop with Band"
+		"title": "High to Low Wood Chop with Band"
 	},
 	{
+		"id": "7",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/horizontal-wood-chop-with-band/",
-		"name": "Horizontal Wood Chop with Band"
+		"title": "Horizontal Wood Chop with Band"
 	},
 	{
+		"id": "8",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/kneeling-ab-wheel-roll-out/",
-		"name": "Kneeling Ab Wheel Roll-Out"
+		"title": "Kneeling Ab Wheel Roll-Out"
 	},
 	{
+		"id": "9",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/kneeling-plank",
-		"name": "Kneeling Plank"
+		"title": "Kneeling Plank"
 	},
 	{
+		"id": "10",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/kneeling-side-plank/",
-		"name": "Kneeling Side Plank"
+		"title": "Kneeling Side Plank"
 	},
 	{
+		"id": "11",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/lying-leg-raise/",
-		"name": "Lying Leg Raise"
+		"title": "Lying Leg Raise"
 	},
 	{
+		"id": "12",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/lying-windshield-wiper/",
-		"name": "Lying Windshield Wiper"
+		"title": "Lying Windshield Wiper"
 	},
 	{
+		"id": "13",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/lying-windshield-wiper-with-bent-knees/",
-		"name": "Lying Windshield Wiper with Bent Knees"
+		"title": "Lying Windshield Wiper with Bent Knees"
 	},
 	{
+		"id": "14",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/machine-crunch/",
-		"name": "Machine Crunch"
+		"title": "Machine Crunch"
 	},
 	{
+		"id": "15",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/mountain-climbers/",
-		"name": "Mountain Climbers"
+		"title": "Mountain Climbers"
 	},
 	{
+		"id": "16",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/oblique-crunch/",
-		"name": "Oblique Crunch"
+		"title": "Oblique Crunch"
 	},
 	{
+		"id": "17",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/oblique-sit-up/",
-		"name": "Oblique Sit-Up"
+		"title": "Oblique Sit-Up"
 	},
 	{
+		"id": "18",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/plank/",
-		"name": "Plank"
+		"title": "Plank"
 	},
 	{
+		"id": "19",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/side-plank/",
-		"name": "Side Plank"
+		"title": "Side Plank"
 	},
 	{
+		"id": "20",
 		"group": "abs",
 		"href": "https://www.strengthlog.com/sit-up/",
-		"name": "Sit-Up"
+		"title": "Sit-Up"
 	},
 	{
+		"id": "21",
 		"group": "back",
 		"href": "https://www.strengthlog.com/back-extension/",
-		"name": "Back Extension"
+		"title": "Back Extension"
 	},
 	{
+		"id": "22",
 		"group": "back",
 		"href": "https://www.strengthlog.com/barbell-row/",
-		"name": "Barbell Row"
+		"title": "Barbell Row"
 	},
 	{
+		"id": "23",
 		"group": "back",
 		"href": "https://www.strengthlog.com/barbell-shrug/",
-		"name": "Barbell Shrug"
+		"title": "Barbell Shrug"
 	},
 	{
+		"id": "24",
 		"group": "back",
 		"href": "https://www.strengthlog.com/block-snatch/",
-		"name": "Block Snatch"
+		"title": "Block Snatch"
 	},
 	{
+		"id": "25",
 		"group": "back",
 		"href": "https://www.strengthlog.com/cable-close-grip-seated-row/",
-		"name": "Cable Close Grip Seated Row"
+		"title": "Cable Close Grip Seated Row"
 	},
 	{
+		"id": "26",
 		"group": "back",
 		"href": "https://www.strengthlog.com/cable-wide-grip-seated-row/",
-		"name": "Cable Wide Grip Seated Row"
+		"title": "Cable Wide Grip Seated Row"
 	},
 	{
+		"id": "27",
 		"group": "back",
 		"href": "https://www.strengthlog.com/chin-up/",
-		"name": "Chin-Up"
+		"title": "Chin-Up"
 	},
 	{
+		"id": "28",
 		"group": "back",
 		"href": "https://www.strengthlog.com/clean/",
-		"name": "Clean"
+		"title": "Clean"
 	},
 	{
+		"id": "29",
 		"group": "back",
 		"href": "https://www.strengthlog.com/clean-and-jerk/",
-		"name": "Clean and Jerk"
+		"title": "Clean and Jerk"
 	},
 	{
+		"id": "30",
 		"group": "back",
 		"href": "https://www.strengthlog.com/deadlift/",
-		"name": "Deadlift"
+		"title": "Deadlift"
 	},
 	{
+		"id": "31",
 		"group": "back",
 		"href": "https://www.strengthlog.com/deficit-deadlift/",
-		"name": "Deficit Deadlift"
+		"title": "Deficit Deadlift"
 	},
 	{
+		"id": "32",
 		"group": "back",
 		"href": "https://www.strengthlog.com/dumbbell-deadlift/",
-		"name": "Dumbbell Deadlift"
+		"title": "Dumbbell Deadlift"
 	},
 	{
+		"id": "33",
 		"group": "back",
 		"href": "https://www.strengthlog.com/dumbbell-row/",
-		"name": "Dumbbell Row"
+		"title": "Dumbbell Row"
 	},
 	{
+		"id": "34",
 		"group": "back",
 		"href": "https://www.strengthlog.com/dumbbell-shrug/",
-		"name": "Dumbbell Shrug"
+		"title": "Dumbbell Shrug"
 	},
 	{
+		"id": "35",
 		"group": "back",
 		"href": "https://www.strengthlog.com/floor-back-extension/",
-		"name": "Floor Back Extension"
+		"title": "Floor Back Extension"
 	},
 	{
+		"id": "36",
 		"group": "back",
 		"href": "https://www.strengthlog.com/good-morning/",
-		"name": "Good Morning"
+		"title": "Good Morning"
 	},
 	{
+		"id": "37",
 		"group": "back",
 		"href": "https://www.strengthlog.com/hang-clean/",
-		"name": "Hang Clean"
+		"title": "Hang Clean"
 	},
 	{
+		"id": "38",
 		"group": "back",
 		"href": "https://www.strengthlog.com/hang-power-clean/",
-		"name": "Hang Power Clean"
+		"title": "Hang Power Clean"
 	},
 	{
+		"id": "39",
 		"group": "back",
 		"href": "https://www.strengthlog.com/hang-power-snatch/",
-		"name": "Hang Power Snatch"
+		"title": "Hang Power Snatch"
 	},
 	{
+		"id": "40",
 		"group": "back",
 		"href": "https://www.strengthlog.com/hang-snatch/",
-		"name": "Hang Snatch"
+		"title": "Hang Snatch"
 	},
 	{
+		"id": "41",
 		"group": "back",
 		"href": "https://www.strengthlog.com/inverted-row/",
-		"name": "Inverted Row"
+		"title": "Inverted Row"
 	},
 	{
+		"id": "42",
 		"group": "back",
 		"href": "https://www.strengthlog.com/inverted-row-with-underhand-grip/",
-		"name": "Inverted Row with Underhand Grip"
+		"title": "Inverted Row with Underhand Grip"
 	},
 	{
+		"id": "43",
 		"group": "back",
 		"href": "https://www.strengthlog.com/kettlebell-swing/",
-		"name": "Kettlebell Swing"
+		"title": "Kettlebell Swing"
 	},
 	{
+		"id": "44",
 		"group": "back",
 		"href": "https://www.strengthlog.com/lat-pulldown-with-pronated-grip/",
-		"name": "Lat Pulldown With Pronated Grip"
+		"title": "Lat Pulldown With Pronated Grip"
 	},
 	{
+		"id": "45",
 		"group": "back",
 		"href": "https://www.strengthlog.com/lat-pulldown-with-supinated-grip/",
-		"name": "Lat Pulldown With Supinated Grip"
+		"title": "Lat Pulldown With Supinated Grip"
 	},
 	{
+		"id": "46",
 		"group": "back",
 		"href": "https://www.strengthlog.com/one-handed-cable-row/",
-		"name": "One-Handed Cable Row"
+		"title": "One-Handed Cable Row"
 	},
 	{
+		"id": "47",
 		"group": "back",
 		"href": "https://www.strengthlog.com/one-handed-lat-pulldown/",
-		"name": "One-Handed Lat Pulldown"
+		"title": "One-Handed Lat Pulldown"
 	},
 	{
+		"id": "48",
 		"group": "back",
 		"href": "https://www.strengthlog.com/pause-deadlift/",
-		"name": "Pause Deadlift"
+		"title": "Pause Deadlift"
 	},
 	{
+		"id": "49",
 		"group": "back",
 		"href": "https://www.strengthlog.com/pendlay-row/",
-		"name": "Pendlay Row"
+		"title": "Pendlay Row"
 	},
 	{
+		"id": "50",
 		"group": "back",
 		"href": "https://www.strengthlog.com/power-clean/",
-		"name": "Power Clean"
+		"title": "Power Clean"
 	},
 	{
+		"id": "51",
 		"group": "back",
 		"href": "https://www.strengthlog.com/power-snatch/",
-		"name": "Power Snatch"
+		"title": "Power Snatch"
 	},
 	{
+		"id": "52",
 		"group": "back",
 		"href": "https://www.strengthlog.com/pull-up/",
-		"name": "Pull-Up"
+		"title": "Pull-Up"
 	},
 	{
+		"id": "53",
 		"group": "back",
 		"href": "https://www.strengthlog.com/rack-pull/",
-		"name": "Rack Pull"
+		"title": "Rack Pull"
 	},
 	{
+		"id": "54",
 		"group": "back",
 		"href": "https://www.strengthlog.com/seal-row/",
-		"name": "Seal Row"
+		"title": "Seal Row"
 	},
 	{
+		"id": "55",
 		"group": "back",
 		"href": "https://www.strengthlog.com/seated-machine-row/",
-		"name": "Seated Machine Row"
+		"title": "Seated Machine Row"
 	},
 	{
+		"id": "56",
 		"group": "back",
 		"href": "https://www.strengthlog.com/snatch/",
-		"name": "Snatch"
+		"title": "Snatch"
 	},
 	{
+		"id": "57",
 		"group": "back",
 		"href": "https://www.strengthlog.com/snatch-grip-deadlift/",
-		"name": "Snatch Grip Deadlift"
+		"title": "Snatch Grip Deadlift"
 	},
 	{
+		"id": "58",
 		"group": "back",
 		"href": "https://www.strengthlog.com/stiff-legged-deadlift/",
-		"name": "Stiff-Legged Deadlift"
+		"title": "Stiff-Legged Deadlift"
 	},
 	{
+		"id": "59",
 		"group": "back",
 		"href": "https://www.strengthlog.com/straight-arm-lat-pulldown/",
-		"name": "Straight Arm Lat Pulldown"
+		"title": "Straight Arm Lat Pulldown"
 	},
 	{
+		"id": "60",
 		"group": "back",
 		"href": "https://www.strengthlog.com/sumo-deadlift/",
-		"name": "Sumo Deadlift"
+		"title": "Sumo Deadlift"
 	},
 	{
+		"id": "61",
 		"group": "back",
 		"href": "https://www.strengthlog.com/t-bar-row/",
-		"name": "T-Bar Row"
+		"title": "T-Bar Row"
 	},
 	{
+		"id": "62",
 		"group": "back",
 		"href": "https://www.strengthlog.com/trap-bar-deadlift-with-high-handles/",
-		"name": "Trap Bar Deadlift With High Handles"
+		"title": "Trap Bar Deadlift With High Handles"
 	},
 	{
+		"id": "63",
 		"group": "back",
 		"href": "https://www.strengthlog.com/trap-bar-deadlift-with-low-handles/",
-		"name": "Trap Bar Deadlift With Low Handles"
+		"title": "Trap Bar Deadlift With Low Handles"
 	},
 	{
+		"id": "64",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/barbell-curl/",
-		"name": "Barbell Curl"
+		"title": "Barbell Curl"
 	},
 	{
+		"id": "65",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/barbell-preacher-curl/",
-		"name": "Barbell Preacher Curl"
+		"title": "Barbell Preacher Curl"
 	},
 	{
+		"id": "66",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/bodyweight-curl/",
-		"name": "Bodyweight Curl"
+		"title": "Bodyweight Curl"
 	},
 	{
+		"id": "67",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/cable-curl-with-bar/",
-		"name": "Cable Curl With Bar"
+		"title": "Cable Curl With Bar"
 	},
 	{
+		"id": "68",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/cable-curl-with-rope/",
-		"name": "Cable Curl With Rope"
+		"title": "Cable Curl With Rope"
 	},
 	{
+		"id": "69",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/concentration-curl/",
-		"name": "Concentration Curl"
+		"title": "Concentration Curl"
 	},
 	{
+		"id": "70",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/dumbbell-curl/",
-		"name": "Dumbbell Curl"
+		"title": "Dumbbell Curl"
 	},
 	{
+		"id": "71",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/dumbbell-preacher-curl/",
-		"name": "Dumbbell Preacher Curl"
+		"title": "Dumbbell Preacher Curl"
 	},
 	{
+		"id": "72",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/hammer-curl/",
-		"name": "Hammer Curl"
+		"title": "Hammer Curl"
 	},
 	{
+		"id": "73",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/incline-dumbbell-curl/",
-		"name": "Incline Dumbbell Curl"
+		"title": "Incline Dumbbell Curl"
 	},
 	{
+		"id": "74",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/machine-bicep-curl/",
-		"name": "Machine Bicep Curl"
+		"title": "Machine Bicep Curl"
 	},
 	{
+		"id": "75",
 		"group": "biceps",
 		"href": "https://www.strengthlog.com/spider-curl/",
-		"name": "Spider Curl"
+		"title": "Spider Curl"
 	},
 	{
+		"id": "76",
 		"group": "calves",
 		"href": "https://www.strengthlog.com/eccentric-heel-drop/",
-		"name": "Eccentric Heel Drop"
+		"title": "Eccentric Heel Drop"
 	},
 	{
+		"id": "77",
 		"group": "calves",
 		"href": "https://www.strengthlog.com/heel-raise/",
-		"name": "Heel Raise"
+		"title": "Heel Raise"
 	},
 	{
+		"id": "78",
 		"group": "calves",
 		"href": "https://www.strengthlog.com/seated-calf-raise/",
-		"name": "Seated Calf Raise"
+		"title": "Seated Calf Raise"
 	},
 	{
+		"id": "79",
 		"group": "calves",
 		"href": "https://www.strengthlog.com/standing-calf-raise/",
-		"name": "Standing Calf Raise"
+		"title": "Standing Calf Raise"
 	},
 	{
+		"id": "80",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/bar-dip/",
-		"name": "Bar Dip"
+		"title": "Bar Dip"
 	},
 	{
+		"id": "81",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/bench-press/",
-		"name": "Bench Press"
+		"title": "Bench Press"
 	},
 	{
+		"id": "82",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/cable-chest-press/",
-		"name": "Cable Chest Press"
+		"title": "Cable Chest Press"
 	},
 	{
+		"id": "83",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/close-grip-bench-press/",
-		"name": "Close-Grip Bench Press"
+		"title": "Close-Grip Bench Press"
 	},
 	{
+		"id": "84",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/close-grip-feet-up-bench-press/",
-		"name": "Close-Grip Feet-Up Bench Press"
+		"title": "Close-Grip Feet-Up Bench Press"
 	},
 	{
+		"id": "85",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/decline-bench-press/",
-		"name": "Decline Bench Press"
+		"title": "Decline Bench Press"
 	},
 	{
+		"id": "86",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-chest-fly/",
-		"name": "Dumbbell Chest Fly"
+		"title": "Dumbbell Chest Fly"
 	},
 	{
+		"id": "87",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-chest-press/",
-		"name": "Dumbbell Chest Press"
+		"title": "Dumbbell Chest Press"
 	},
 	{
+		"id": "88",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-decline-chest-press/",
-		"name": "Dumbbell Decline Chest Press"
+		"title": "Dumbbell Decline Chest Press"
 	},
 	{
+		"id": "89",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-floor-press/",
-		"name": "Dumbbell Floor Press"
+		"title": "Dumbbell Floor Press"
 	},
 	{
+		"id": "90",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-pullover/",
-		"name": "Dumbbell Pullover"
+		"title": "Dumbbell Pullover"
 	},
 	{
+		"id": "91",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/feet-up-bench-press/",
-		"name": "Feet-Up Bench Press"
+		"title": "Feet-Up Bench Press"
 	},
 	{
+		"id": "92",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/floor-press/",
-		"name": "Floor Press"
+		"title": "Floor Press"
 	},
 	{
+		"id": "93",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/incline-bench-press/",
-		"name": "Incline Bench Press"
+		"title": "Incline Bench Press"
 	},
 	{
+		"id": "94",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/dumbbell-incline-press/",
-		"name": "Incline Dumbbell Press"
+		"title": "Incline Dumbbell Press"
 	},
 	{
+		"id": "95",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/incline-push-up/",
-		"name": "Incline Push-Up"
+		"title": "Incline Push-Up"
 	},
 	{
+		"id": "96",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/kneeling-incline-push-up/",
-		"name": "Kneeling Incline Push-Up"
+		"title": "Kneeling Incline Push-Up"
 	},
 	{
+		"id": "97",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/kneeling-push-up/",
-		"name": "Kneeling Push-Up"
+		"title": "Kneeling Push-Up"
 	},
 	{
+		"id": "98",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/machine-chest-fly/",
-		"name": "Machine Chest Fly"
+		"title": "Machine Chest Fly"
 	},
 	{
+		"id": "99",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/machine-chest-press/",
-		"name": "Machine Chest Press"
+		"title": "Machine Chest Press"
 	},
 	{
+		"id": "100",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/pec-deck/",
-		"name": "Pec Deck"
+		"title": "Pec Deck"
 	},
 	{
+		"id": "101",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/push-up/",
-		"name": "Push-Up"
+		"title": "Push-Up"
 	},
 	{
+		"id": "102",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/push-up-against-wall/",
-		"name": "Push-Up Against Wall"
+		"title": "Push-Up Against Wall"
 	},
 	{
+		"id": "103",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/push-ups-with-feet-in-rings/",
-		"name": "Push-Ups With Feet in Rings"
+		"title": "Push-Ups With Feet in Rings"
 	},
 	{
+		"id": "104",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/resistance-band-chest-fly/",
-		"name": "Resistance Band Chest Fly"
+		"title": "Resistance Band Chest Fly"
 	},
 	{
+		"id": "105",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/smith-machine-bench-press/",
-		"name": "Smith Machine Bench Press"
+		"title": "Smith Machine Bench Press"
 	},
 	{
+		"id": "106",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/smith-machine-incline-bench-press/",
-		"name": "Smith Machine Incline Bench Press"
+		"title": "Smith Machine Incline Bench Press"
 	},
 	{
+		"id": "107",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/standing-cable-chest-fly/",
-		"name": "Standing Cable Chest Fly"
+		"title": "Standing Cable Chest Fly"
 	},
 	{
+		"id": "108",
 		"group": "chest",
 		"href": "https://www.strengthlog.com/standing-resistance-band-chest-fly/",
-		"name": "Standing Resistance Band Chest Fly"
+		"title": "Standing Resistance Band Chest Fly"
 	},
 	{
+		"id": "109",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/barbell-wrist-curl/",
-		"name": "Barbell Wrist Curl"
+		"title": "Barbell Wrist Curl"
 	},
 	{
+		"id": "110",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/barbell-wrist-curl-behind-the-back/",
-		"name": "Barbell Wrist Curl Behind the Back"
+		"title": "Barbell Wrist Curl Behind the Back"
 	},
 	{
+		"id": "111",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/bar-hang/",
-		"name": "Bar Hang"
+		"title": "Bar Hang"
 	},
 	{
+		"id": "112",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/dumbbell-wrist-curl/",
-		"name": "Dumbbell Wrist Curl"
+		"title": "Dumbbell Wrist Curl"
 	},
 	{
+		"id": "113",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/farmers-walk/",
-		"name": "Farmers Walk"
+		"title": "Farmers Walk"
 	},
 	{
+		"id": "114",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/fat-bar-deadlift/",
-		"name": "Fat Bar Deadlift"
+		"title": "Fat Bar Deadlift"
 	},
 	{
+		"id": "115",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/gripper/",
-		"name": "Gripper"
+		"title": "Gripper"
 	},
 	{
+		"id": "116",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/one-handed-bar-hang/",
-		"name": "One-Handed Bar Hang"
+		"title": "One-Handed Bar Hang"
 	},
 	{
+		"id": "117",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/plate-pinch/",
-		"name": "Plate Pinch"
+		"title": "Plate Pinch"
 	},
 	{
+		"id": "118",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/plate-wrist-curl/",
-		"name": "Plate Wrist Curl"
+		"title": "Plate Wrist Curl"
 	},
 	{
+		"id": "119",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/towel-pull-up/",
-		"name": "Towel Pull-Up"
+		"title": "Towel Pull-Up"
 	},
 	{
+		"id": "120",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/barbell-wrist-extension/",
-		"name": "Barbell Wrist Extension"
+		"title": "Barbell Wrist Extension"
 	},
 	{
+		"id": "121",
 		"group": "forearm",
 		"href": "https://www.strengthlog.com/dumbbell-wrist-extension/",
-		"name": "Dumbbell Wrist Extension"
+		"title": "Dumbbell Wrist Extension"
 	},
 	{
+		"id": "122",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/banded-side-kick/",
-		"name": "Banded Side Kicks"
+		"title": "Banded Side Kicks"
 	},
 	{
+		"id": "123",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/cable-pull-through/",
-		"name": "Cable Pull Through"
+		"title": "Cable Pull Through"
 	},
 	{
+		"id": "124",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/clamshells/",
-		"name": "Clamshells"
+		"title": "Clamshells"
 	},
 	{
+		"id": "125",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/dumbbell-romanian-deadlift/",
-		"name": "Dumbbell Romanian Deadlift"
+		"title": "Dumbbell Romanian Deadlift"
 	},
 	{
+		"id": "126",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/dumbbell-frog-pumps/",
-		"name": "Dumbbell Frog Pumps"
+		"title": "Dumbbell Frog Pumps"
 	},
 	{
+		"id": "127",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/fire-hydrants/",
-		"name": "Fire Hydrants"
+		"title": "Fire Hydrants"
 	},
 	{
+		"id": "128",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/frog-pumps/",
-		"name": "Frog Pumps"
+		"title": "Frog Pumps"
 	},
 	{
+		"id": "129",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/glute-bridge/",
-		"name": "Glute Bridge"
+		"title": "Glute Bridge"
 	},
 	{
+		"id": "130",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/hip-abduction-against-band/",
-		"name": "Hip Abduction Against Band"
+		"title": "Hip Abduction Against Band"
 	},
 	{
+		"id": "131",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/hip-abduction-machine/",
-		"name": "Hip Abduction Machine"
+		"title": "Hip Abduction Machine"
 	},
 	{
+		"id": "132",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/hip-thrust/",
-		"name": "Hip Thrust"
+		"title": "Hip Thrust"
 	},
 	{
+		"id": "133",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/hip-thrust-machine/",
-		"name": "Hip Thrust Machine"
+		"title": "Hip Thrust Machine"
 	},
 	{
+		"id": "134",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/hip-thrust-with-band-around-knees/",
-		"name": "Hip Thrust With Band Around Knees"
+		"title": "Hip Thrust With Band Around Knees"
 	},
 	{
+		"id": "135",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/lateral-walk-with-band/",
-		"name": "Lateral Walk With Band"
+		"title": "Lateral Walk With Band"
 	},
 	{
+		"id": "136",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/machine-glute-kickbacks/",
-		"name": "Machine Glute Kickbacks"
+		"title": "Machine Glute Kickbacks"
 	},
 	{
+		"id": "137",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/one-legged-glute-bridge/",
-		"name": "One-Legged Glute Bridge"
+		"title": "One-Legged Glute Bridge"
 	},
 	{
+		"id": "138",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/one-legged-hip-thrust/",
-		"name": "One-Legged Hip Thrust"
+		"title": "One-Legged Hip Thrust"
 	},
 	{
+		"id": "139",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/romanian-deadlift/",
-		"name": "Romanian Deadlift"
+		"title": "Romanian Deadlift"
 	},
 	{
+		"id": "140",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/single-leg-romanian-deadlift/",
-		"name": "Single Leg Romanian Deadlift"
+		"title": "Single Leg Romanian Deadlift"
 	},
 	{
+		"id": "141",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/standing-glute-kickback-in-machine/",
-		"name": "Standing Glute Kickback in Machine"
+		"title": "Standing Glute Kickback in Machine"
 	},
 	{
+		"id": "142",
 		"group": "glutes",
 		"href": "https://www.strengthlog.com/step-up/",
-		"name": "Step Up"
+		"title": "Step Up"
 	},
 	{
+		"id": "143",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/air-squat/",
-		"name": "Air Squat"
+		"title": "Air Squat"
 	},
 	{
+		"id": "144",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/barbell-hack-squat/",
-		"name": "Barbell Hack Squat"
+		"title": "Barbell Hack Squat"
 	},
 	{
+		"id": "145",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/barbell-lunge/",
-		"name": "Barbell Lunge"
+		"title": "Barbell Lunge"
 	},
 	{
+		"id": "146",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/barbell-walking-lunges/",
-		"name": "Barbell Walking Lunge"
+		"title": "Barbell Walking Lunge"
 	},
 	{
+		"id": "147",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/belt-squats/",
-		"name": "Belt Squat"
+		"title": "Belt Squat"
 	},
 	{
+		"id": "148",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/body-weight-lunge/",
-		"name": "Body Weight Lunge"
+		"title": "Body Weight Lunge"
 	},
 	{
+		"id": "149",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/box-squat/",
-		"name": "Box Squat"
+		"title": "Box Squat"
 	},
 	{
+		"id": "150",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/bulgarian-split-squat/",
-		"name": "Bulgarian Split Squat"
+		"title": "Bulgarian Split Squat"
 	},
 	{
+		"id": "151",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/chair-squats/",
-		"name": "Chair Squat"
+		"title": "Chair Squat"
 	},
 	{
+		"id": "152",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/dumbbell-lunge/",
-		"name": "Dumbbell Lunge"
+		"title": "Dumbbell Lunge"
 	},
 	{
+		"id": "153",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/dumbbell-squat/",
-		"name": "Dumbbell Squat"
+		"title": "Dumbbell Squat"
 	},
 	{
+		"id": "154",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/front-squat/",
-		"name": "Front Squat"
+		"title": "Front Squat"
 	},
 	{
+		"id": "155",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/goblet-squat/",
-		"name": "Goblet Squat"
+		"title": "Goblet Squat"
 	},
 	{
+		"id": "156",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/hack-squat-machine/",
-		"name": "Hack Squat Machine"
+		"title": "Hack Squat Machine"
 	},
 	{
+		"id": "157",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/half-body-weight-squats/",
-		"name": "Half Air Squat"
+		"title": "Half Air Squat"
 	},
 	{
+		"id": "158",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/hip-adduction-machine/",
-		"name": "Hip Adduction Machine"
+		"title": "Hip Adduction Machine"
 	},
 	{
+		"id": "159",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/landmine-hack-squat/",
-		"name": "Landmine Hack Squat"
+		"title": "Landmine Hack Squat"
 	},
 	{
+		"id": "160",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/landmine-squat/",
-		"name": "Landmine Squat"
+		"title": "Landmine Squat"
 	},
 	{
+		"id": "161",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/leg-extension/",
-		"name": "Leg Extension"
+		"title": "Leg Extension"
 	},
 	{
+		"id": "162",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/leg-press/",
-		"name": "Leg Press"
+		"title": "Leg Press"
 	},
 	{
+		"id": "163",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/lying-leg-curl/",
-		"name": "Lying Leg Curl"
+		"title": "Lying Leg Curl"
 	},
 	{
+		"id": "164",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/pause-squat/",
-		"name": "Pause Squat"
+		"title": "Pause Squat"
 	},
 	{
+		"id": "165",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/romanian-deadlift/",
-		"name": "Romanian Deadlift"
+		"title": "Romanian Deadlift"
 	},
 	{
+		"id": "166",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/safety-bar-squat/",
-		"name": "Safety Bar Squat"
+		"title": "Safety Bar Squat"
 	},
 	{
+		"id": "167",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/seated-leg-curl/",
-		"name": "Seated Leg Curl"
+		"title": "Seated Leg Curl"
 	},
 	{
+		"id": "168",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/shallow-lunges-bodyweight/",
-		"name": "Shallow Body Weight Lunge"
+		"title": "Shallow Body Weight Lunge"
 	},
 	{
+		"id": "169",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/side-lunges-bodyweight/",
-		"name": "Side Lunges (Bodyweight)"
+		"title": "Side Lunges (Bodyweight)"
 	},
 	{
+		"id": "170",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/smith-machine-squat/",
-		"name": "Smith Machine Squat"
+		"title": "Smith Machine Squat"
 	},
 	{
+		"id": "171",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/squat/",
-		"name": "Squat"
+		"title": "Squat"
 	},
 	{
+		"id": "172",
 		"group": "legs",
 		"href": "https://www.strengthlog.com/step-up/",
-		"name": "Step Up"
+		"title": "Step Up"
 	},
 	{
+		"id": "173",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/band-external-shoulder-rotation/",
-		"name": "Band External Shoulder Rotation"
+		"title": "Band External Shoulder Rotation"
 	},
 	{
+		"id": "174",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/band-internal-shoulder-rotation/",
-		"name": "Band Internal Shoulder Rotation"
+		"title": "Band Internal Shoulder Rotation"
 	},
 	{
+		"id": "175",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/band-pull-apart/",
-		"name": "Band Pull-Apart"
+		"title": "Band Pull-Apart"
 	},
 	{
+		"id": "176",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/barbell-front-raise/",
-		"name": "Barbell Front Raise"
+		"title": "Barbell Front Raise"
 	},
 	{
+		"id": "177",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/barbell-rear-delt-row/",
-		"name": "Barbell Rear Delt Row"
+		"title": "Barbell Rear Delt Row"
 	},
 	{
+		"id": "178",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/barbell-upright-row/",
-		"name": "Barbell Upright Row"
+		"title": "Barbell Upright Row"
 	},
 	{
+		"id": "179",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/behind-the-neck-press/",
-		"name": "Behind the Neck Press"
+		"title": "Behind the Neck Press"
 	},
 	{
+		"id": "180",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/cable-lateral-raise/",
-		"name": "Cable Lateral Raise"
+		"title": "Cable Lateral Raise"
 	},
 	{
+		"id": "181",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/cable-rear-delt-row/",
-		"name": "Cable Rear Delt Row"
+		"title": "Cable Rear Delt Row"
 	},
 	{
+		"id": "182",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-front-raise/",
-		"name": "Dumbbell Front Raise"
+		"title": "Dumbbell Front Raise"
 	},
 	{
+		"id": "183",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-horizontal-internal-shoulder-rotation/",
-		"name": "Dumbbell Horizontal Internal Shoulder Rotation"
+		"title": "Dumbbell Horizontal Internal Shoulder Rotation"
 	},
 	{
+		"id": "184",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-horizontal-external-shoulder-rotation/",
-		"name": "Dumbbell Horizontal External Shoulder Rotation"
+		"title": "Dumbbell Horizontal External Shoulder Rotation"
 	},
 	{
+		"id": "185",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-lateral-raise/",
-		"name": "Dumbbell Lateral Raise"
+		"title": "Dumbbell Lateral Raise"
 	},
 	{
+		"id": "186",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-rear-delt-row/",
-		"name": "Dumbbell Rear Delt Row"
+		"title": "Dumbbell Rear Delt Row"
 	},
 	{
+		"id": "187",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/dumbbell-shoulder-press/",
-		"name": "Dumbbell Shoulder Press"
+		"title": "Dumbbell Shoulder Press"
 	},
 	{
+		"id": "188",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/face-pull/",
-		"name": "Face Pull"
+		"title": "Face Pull"
 	},
 	{
+		"id": "189",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/front-hold/",
-		"name": "Front Hold"
+		"title": "Front Hold"
 	},
 	{
+		"id": "190",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/lying-dumbbell-external-shoulder-rotation/",
-		"name": "Lying Dumbbell External Shoulder Rotation"
+		"title": "Lying Dumbbell External Shoulder Rotation"
 	},
 	{
+		"id": "191",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/lying-dumbbell-internal-shoulder-rotation/",
-		"name": "Lying Dumbbell Internal Shoulder Rotation"
+		"title": "Lying Dumbbell Internal Shoulder Rotation"
 	},
 	{
+		"id": "192",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/machine-lateral-raise/",
-		"name": "Machine Lateral Raise"
+		"title": "Machine Lateral Raise"
 	},
 	{
+		"id": "193",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/machine-shoulder-press/",
-		"name": "Machine Shoulder Press"
+		"title": "Machine Shoulder Press"
 	},
 	{
+		"id": "194",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/monkey-row/",
-		"name": "Monkey Row"
+		"title": "Monkey Row"
 	},
 	{
+		"id": "195",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/overhead-press/",
-		"name": "Overhead Press"
+		"title": "Overhead Press"
 	},
 	{
+		"id": "196",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/plate-front-raise/",
-		"name": "Plate Front Raise"
+		"title": "Plate Front Raise"
 	},
 	{
+		"id": "197",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/power-jerk/",
-		"name": "Power Jerk"
+		"title": "Power Jerk"
 	},
 	{
+		"id": "198",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/push-press/",
-		"name": "Push Press"
+		"title": "Push Press"
 	},
 	{
+		"id": "199",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/reverse-dumbbell-flyes/",
-		"name": "Reverse Dumbbell Flyes"
+		"title": "Reverse Dumbbell Flyes"
 	},
 	{
+		"id": "200",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/reverse-machine-fly/",
-		"name": "Reverse Machine Fly"
+		"title": "Reverse Machine Fly"
 	},
 	{
+		"id": "201",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/seated-dumbbell-shoulder-press/",
-		"name": "Seated Dumbbell Shoulder Press"
+		"title": "Seated Dumbbell Shoulder Press"
 	},
 	{
+		"id": "202",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/seated-barbell-overhead-press/",
-		"name": "Seated Barbell Overhead Press"
+		"title": "Seated Barbell Overhead Press"
 	},
 	{
+		"id": "203",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/seated-smith-machine-shoulder-press/",
-		"name": "Seated Smith Machine Shoulder Press"
+		"title": "Seated Smith Machine Shoulder Press"
 	},
 	{
+		"id": "204",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/snatch-grip-behind-the-neck-press/",
-		"name": "Snatch Grip Behind the Neck Press"
+		"title": "Snatch Grip Behind the Neck Press"
 	},
 	{
+		"id": "205",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/squat-jerk/",
-		"name": "Squat Jerk"
+		"title": "Squat Jerk"
 	},
 	{
+		"id": "206",
 		"group": "shoulder",
 		"href": "https://www.strengthlog.com/split-jerk/",
-		"name": "Split Jerk"
+		"title": "Split Jerk"
 	},
 	{
+		"id": "207",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/barbell-standing-triceps-extension/",
-		"name": "Barbell Standing Triceps Extension"
+		"title": "Barbell Standing Triceps Extension"
 	},
 	{
+		"id": "208",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/barbell-lying-triceps-extension/",
-		"name": "Barbell Lying Triceps Extension"
+		"title": "Barbell Lying Triceps Extension"
 	},
 	{
+		"id": "209",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/bench-dip/",
-		"name": "Bench Dip"
+		"title": "Bench Dip"
 	},
 	{
+		"id": "210",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/close-grip-push-up/",
-		"name": "Close-Grip Push-Up"
+		"title": "Close-Grip Push-Up"
 	},
 	{
+		"id": "211",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/dumbbell-lying-triceps-extension-2/",
-		"name": "Dumbbell Lying Triceps Extension"
+		"title": "Dumbbell Lying Triceps Extension"
 	},
 	{
+		"id": "212",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/dumbbell-standing-triceps-extension/",
-		"name": "Dumbbell Standing Triceps Extension"
+		"title": "Dumbbell Standing Triceps Extension"
 	},
 	{
+		"id": "213",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/overhead-cable-triceps-extension/",
-		"name": "Overhead Cable Triceps Extension"
+		"title": "Overhead Cable Triceps Extension"
 	},
 	{
+		"id": "214",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/triceps-bodyweight-extension/",
-		"name": "Tricep Bodyweight Extension"
+		"title": "Tricep Bodyweight Extension"
 	},
 	{
+		"id": "215",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/tricep-pushdown-with-bar/",
-		"name": "Tricep Pushdown With Bar"
+		"title": "Tricep Pushdown With Bar"
 	},
 	{
+		"id": "216",
 		"group": "triceps",
 		"href": "https://www.strengthlog.com/tricep-pushdown-with-rope/",
-		"name": "Tricep Pushdown With Rope"
+		"title": "Tricep Pushdown With Rope"
 	}
 ]
