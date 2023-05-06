@@ -2,29 +2,29 @@ import { Button, Card, Input, Modal, Text } from "@ui-kitten/components";
 import { useState } from "react";
 import { View } from "react-native";
 
-interface ActionInput {
-	title: string;
+interface InputProps<T extends string | number> {
 	id: string;
-	numberValue: number;
-	resultValue: number;
+	title: string;
+	numberValue: T;
+	resultValue: T;
 }
+
+interface EditProps extends Omit<InputProps<string>, "id"> {
+	onChangeText: (text: string) => void;
+}
+
 export interface ActionModalProps {
 	visible: boolean;
 	hideModalCallback: () => void;
 	action?: "delete" | "edit";
 	date: string;
-	inputs: ActionInput;
+	inputs: InputProps<number>;
 	index: number;
-	onPress(props: { date: string; inputs: ActionInput & { index: number }; action: "delete" | "edit" }): void;
+	onPress(props: { date: string; inputs: InputProps<number> & { index: number }; action: "delete" | "edit" }): void;
 	resultValueCalculationFn(val: string): number;
 }
 
-function Edit(props: {
-	title: string;
-	numberValue: string;
-	resultValue: string;
-	onChangeText: (text: string) => void;
-}) {
+function Edit(props: EditProps) {
 	const { title, numberValue, resultValue, onChangeText } = props;
 	return (
 		<View style={{ flexDirection: "row", columnGap: 8, width: 300 }}>

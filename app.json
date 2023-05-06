@@ -43,7 +43,12 @@
         }
       }
     },
-    "sdkVersion": "48.0.0"
+    "sdkVersion": "48.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "80fb6768-afdd-447b-b3a0-0b0fc60a2e58"
+      }
+    }
   },
   "name": "chatgpt-mobile"
 }

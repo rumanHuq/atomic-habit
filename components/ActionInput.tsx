@@ -20,6 +20,16 @@ function AddIcon({ style }: { style: { height: number; marginHorizontal: number;
 }
 
 const styles: ViewStyle = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: 6 };
+const autocompleteStyles = {
+	dark: {
+		focus: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(34,43,69)", borderColor: "rgb(100,87,166)" },
+		blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(25,33,56)", borderColor: "rgb(22,28,49)" },
+	},
+	light: {
+		focus: { fontColor: "rgb(174,180,198)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(155,146,210)" },
+		blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(237,241,247)" },
+	},
+};
 
 export function ActionInput<T extends Record<string, unknown>>(props: ActionInputProps<T>) {
 	const { onSetItem, numberPlaceHolder, resultValueFn, resultPlaceHolderSuffix, dataSet, direction = "down" } = props;
@@ -27,16 +37,7 @@ export function ActionInput<T extends Record<string, unknown>>(props: ActionInpu
 	const [numberValue, setNumberValue] = useState("-1");
 	const [styleState, setStyleState] = useState<"focus" | "blur">("focus");
 	const colorScheme = useColorScheme() ?? "light";
-	const autocompleteStyles = {
-		dark: {
-			focus: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(34,43,69)", borderColor: "rgb(100,87,166)" },
-			blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(25,33,56)", borderColor: "rgb(22,28,49)" },
-		},
-		light: {
-			focus: { fontColor: "rgb(174,180,198)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(155,146,210)" },
-			blur: { fontColor: "rgb(132,143,168)", backgroundColor: "rgb(247,249,252)", borderColor: "rgb(237,241,247)" },
-		},
-	};
+
 	const restInputs = () => {
 		setNumberValue("-1");
 		setSelectedItem(null);
