@@ -1,6 +1,7 @@
 import { Divider, Layout, Text } from "@ui-kitten/components";
-import { ReactNode } from "react";
-import { FlatList, ListRenderItem, View, ViewProps } from "react-native";
+import type { ReactNode } from "react";
+import type { ListRenderItem, ViewProps } from "react-native";
+import { FlatList, View } from "react-native";
 
 interface DataGridProps<Data> extends ViewProps {
 	title: string;

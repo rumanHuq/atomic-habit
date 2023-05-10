@@ -6,12 +6,13 @@ import { Pressable } from "react-native";
 import { Menu, MenuOption, MenuOptions, MenuTrigger } from "react-native-popup-menu";
 
 import { ActionInput } from "./ActionInput";
-import { ActionModal, ActionModalProps } from "./ActionModal";
+import type { ActionModalProps } from "./ActionModal";
+import { ActionModal } from "./ActionModal";
 import { DataGrid } from "./DataGrid";
 
-import { DateRecords, ExerciseHistory as ExerciseHistoryType } from "@/@types/@types";
+import type { DateRecords, ExerciseHistory as ExerciseHistoryType } from "@/@types/@types";
 import exercisesDb from "@/exercises_db.json";
-import { useStore } from "@/hooks/useStore";
+import { useAppStore } from "@/hooks/useAppStore";
 import { getProgressiveOverloadSuggestion } from "@/utils/getProgressiveOverloadSuggestion";
 
 interface ModalProps {
@@ -49,8 +50,8 @@ function exerciseListItem(props: {
 
 export function ExerciseHistory(props: { dateRecords: DateRecords; date: string }) {
 	const [modalState, setModalState] = useState<ModalProps>({ visibility: false });
-	const setExerciseOfTheDay = useStore((state) => state.setExerciseOfTheDay);
-	const deleteExerciseOfTheDay = useStore((state) => state.deleteExerciseOfTheDay);
+	const setExerciseOfTheDay = useAppStore((state) => state.setExerciseOfTheDay);
+	const deleteExerciseOfTheDay = useAppStore((state) => state.deleteExerciseOfTheDay);
 	const { dateRecords, date } = props;
 	const dayExerciseRecord = dateRecords[date].exerciseHistories;
 	const onPressModalActionCta: ActionModalProps["onPress"] = (item) => {

@@ -5,16 +5,16 @@ import { Container } from "@/components/Container";
 import { ExerciseHistory } from "@/components/ExerciseHistory";
 import { FoodHistory } from "@/components/FoodHistory";
 import { TabScreen } from "@/components/TabScreen";
-import { useStore } from "@/hooks/useStore";
+import { useAppStore } from "@/hooks/useAppStore";
 import { getDateOfTheDay } from "@/utils/getDateOfTheDay";
 
 const { env } = process;
 
 export default function DetailsScreen() {
 	const date = getDateOfTheDay();
-	const dateRecords = useStore((state) => state.dateRecords);
-	const setInitialDataOfTheDay = useStore((state) => state.setInitialDataOfTheDay);
-	const resetState = useStore((state) => state.resetState);
+	const dateRecords = useAppStore((state) => state.dateRecords);
+	const setInitialDataOfTheDay = useAppStore((state) => state.setInitialDataOfTheDay);
+	const resetState = useAppStore((state) => state.resetState);
 	const todayRecord = dateRecords[date];
 
 	useEffect(() => {

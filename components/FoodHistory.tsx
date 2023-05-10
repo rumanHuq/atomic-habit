@@ -1,15 +1,16 @@
 import { Layout, Text } from "@ui-kitten/components";
-import { uniq, uniqBy } from "lodash";
+import { uniqBy } from "lodash";
 import { useState } from "react";
 import { Menu, MenuOption, MenuOptions, MenuTrigger } from "react-native-popup-menu";
 
 import { ActionInput } from "./ActionInput";
-import { ActionModal, ActionModalProps } from "./ActionModal";
+import type { ActionModalProps } from "./ActionModal";
+import { ActionModal } from "./ActionModal";
 import { DataGrid } from "./DataGrid";
 
-import { FoodHistory as FoodHistoryType } from "@/@types/@types";
+import type { FoodHistory as FoodHistoryType } from "@/@types/@types";
 import caloriesDb from "@/calories_db.json";
-import { useStore } from "@/hooks/useStore";
+import { useAppStore } from "@/hooks/useAppStore";
 import { getCalorieInfo } from "@/utils/getCalorieInfo";
 
 interface ModalProps {
@@ -44,8 +45,8 @@ function foodListItem({
 }
 
 export function FoodHistory({ foodHistories, date }: { foodHistories: FoodHistoryType[]; date: string }) {
-	const setCalorieOfTheDay = useStore((state) => state.setCalorieOfTheDay);
-	const deleteCalorieOfTheDay = useStore((state) => state.deleteCalorieOfTheDay);
+	const setCalorieOfTheDay = useAppStore((state) => state.setCalorieOfTheDay);
+	const deleteCalorieOfTheDay = useAppStore((state) => state.deleteCalorieOfTheDay);
 	const onPressModalActionCta: ActionModalProps["onPress"] = (props) => {
 		if (props.action === "delete") {
 			deleteCalorieOfTheDay(props.date, props.inputs.index);

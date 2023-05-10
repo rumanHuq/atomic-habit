@@ -1,4 +1,5 @@
-import { Icon, IconProps, Text, useTheme } from "@ui-kitten/components";
+import type { IconProps } from "@ui-kitten/components";
+import { Icon, Text, useTheme } from "@ui-kitten/components";
 import { View } from "react-native";
 
 interface CalendarIconProps extends IconProps {

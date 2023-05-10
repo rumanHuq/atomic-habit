@@ -4,7 +4,7 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
-import { FoodHistory, DateRecords, ExerciseHistory } from "@/@types/@types";
+import type { FoodHistory, DateRecords, ExerciseHistory } from "@/@types/@types";
 
 interface State {
 	dateRecords: DateRecords;
@@ -21,7 +21,7 @@ interface Actions {
 	resetState(): void;
 }
 
-export const useStore = create(
+export const useAppStore = create(
 	persist(
 		immer<State & Actions>((set) => ({
 			allDropdownVisible: false,
