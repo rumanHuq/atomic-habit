@@ -1,4 +1,4 @@
-import { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+import type { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
 
 export interface FoodHistory extends NonNullable<TAutocompleteDropdownItem> {
 	title: string;

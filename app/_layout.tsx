@@ -13,7 +13,6 @@ import { MenuProvider } from "react-native-popup-menu";
 
 import { FeatherIconsPack } from "@/lib/iconPack";
 import { appTheme } from "@/theme";
-import { createFile } from "@/utils/fileSystem";
 
 function onAppStateChange(status: AppStateStatus) {
 	if (Platform.OS !== "web") {
@@ -53,7 +52,6 @@ export default function Layout() {
 
 	useEffect(() => {
 		const subscription = AppState.addEventListener("change", onAppStateChange);
-		createFile();
 		return () => subscription.remove();
 	}, []);
 	const theme = { ...eva[colorScheme], ...appTheme };

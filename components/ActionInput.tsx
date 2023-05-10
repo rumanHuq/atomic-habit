@@ -1,8 +1,10 @@
 import { Icon, Button, Input } from "@ui-kitten/components";
 import { omit } from "lodash";
 import { useState } from "react";
-import { TextStyle, ViewStyle, View, useColorScheme, Keyboard } from "react-native";
-import { AutocompleteDropdown, TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+import type { TextStyle, ViewStyle } from "react-native";
+import { View, useColorScheme, Keyboard } from "react-native";
+import type { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+import { AutocompleteDropdown } from "react-native-autocomplete-dropdown";
 
 interface ActionInputProps<T> {
 	direction?: "up" | "down";

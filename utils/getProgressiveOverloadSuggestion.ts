@@ -1,6 +1,6 @@
-import { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+import type { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
 
-import { DateRecords } from "@/@types/@types";
+import type { DateRecords } from "@/@types/@types";
 
 interface GetProgressiveOverloadSuggestionProps {
 	exercise: (TAutocompleteDropdownItem & Record<string, unknown>) | null;
@@ -23,7 +23,7 @@ export function getProgressiveOverloadSuggestion(props: GetProgressiveOverloadSu
 
 	const lastTimeExerciseDone = dateRecordsArr
 		.sort((a, b) => (new Date(a[0]) > new Date(b[0]) ? -1 : 1))
-		.find(([date, { exerciseHistories }]) => exerciseHistories.find(({ id }) => id === exercise.id));
+		.find(([_, { exerciseHistories }]) => exerciseHistories.find(({ id }) => id === exercise.id));
 
 	if (!lastTimeExerciseDone) return 0;
 

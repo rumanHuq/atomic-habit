@@ -1,4 +1,4 @@
-import { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
+import type { TAutocompleteDropdownItem } from "react-native-autocomplete-dropdown";
 
 interface GetCalorieInfoProps {
 	foodItem: (TAutocompleteDropdownItem & Record<string, unknown>) | null;
