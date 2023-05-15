@@ -1,0 +1,16 @@
+name: Run unit tests
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get codes
+        uses: actions/checkout@v3
+      - name: Install Node@16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.17.0
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
